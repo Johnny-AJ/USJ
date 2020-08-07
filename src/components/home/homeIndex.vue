@@ -610,6 +610,14 @@
                                 written on the pass
                             </div>
                         </div>
+                        <div class="common_nav">
+                            <div class="common_title">A 1:</div>
+                            <div class="common_text">
+                                The passes are considered open tickets, you may enter the park on any day before the
+                                expiration date
+                                written on the pass
+                            </div>
+                        </div>
 
                     </div>
 
