@@ -1,6 +1,6 @@
 <template>
     <!-- 顶部 -->
-    <div class="top">
+    <div class="top globalWith">
         <!-- 展示 -->
         <div class="top_top">
             <div class="top_left">
@@ -73,26 +73,30 @@
 
 <style lang="scss" scope>
     .top {
-        height: 200px;
-        border: 1px solid blue;
+        /* height: 200px;
+        border: 1px solid blue; */
+        /* background-image: url("assets/images/bg_main.png");
+        background-position: top center;
+        background-repeat: no-repeat;
+        position: relative; */
     }
 
     .top_top {
         display: flex;
-        margin-top: 30px;
+        padding-top: 30px;
     }
 
     /* 左边 */
     .top_left img {
         width: 400px;
         height: 80px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         visibility: top;
     }
 
     /* 右边 */
     .top_right {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin-left: 48px;
     }
 
@@ -139,11 +143,12 @@
     /* 导航栏 */
     .top_navi {
         width: 100%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: flex;
         align-items: center;
         justify-content: space-around;
-        margin-top: 20px
+        margin-top: 10px;
+        margin-bottom: 15px
     }
 
     .navi_img {

@@ -4,6 +4,7 @@ body,
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #0073e3;
 }
 
 ol,
@@ -29,4 +30,10 @@ a {
 dd {
     padding: 0;
     margin: 0;
+}
+
+/* 版心宽度 */
+.globalWith {
+    width: 1000px;
+    margin: 0 auto;
 }

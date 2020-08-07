@@ -16,7 +16,7 @@ export default {
   components: {
     top,
     bottom,
-    home
+    home,
   },
   data() {
     return {};
@@ -28,15 +28,36 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   width: 100%;
   margin: 0 auto;
-  background-image: url("assets/images/bg_main.png");
+  // background-image: url("./assets/images/bg_main1.png");
+  background-image: url("./assets/images/bg_main.png");
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
 }
 .pagerwrap {
-  width: 1000px;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
+// .top_img {
+//   // width: 100%;
+//   width: 1000px;
+//   height: 1000px;
+//   margin: 0 auto;
+//   background-image: url("./assets/images/bg_main.png");
+//   background-position: top center;
+//   background-repeat: no-repeat;
+//   position: relative;
+// }
+// .bottom_img {
+//   // width: 100%;
+//   width: 1000px;
+//   height: 1000px;
+//   margin: 0 auto;
+//   background-image: url("./assets/images/bg_main1.png");
+//   background-position: bottom center;
+//   background-repeat: no-repeat;
+//   position: relative;
+// }
 </style>
