@@ -106,7 +106,7 @@
         text-align: center;
         color: blue;
         margin-top: 1.6875rem;
-        margin-left: 21.75rem;
+        margin-left: 21rem;
     }
 
     .nav_nav {
