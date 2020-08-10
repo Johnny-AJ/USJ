@@ -2,7 +2,7 @@
   <div id="app">
     <div class="pagerwrap">
       <top />
-      <home />
+      <success />
       <bottom />
     </div>
   </div>
@@ -10,16 +10,22 @@
 <script>
 import top from "./components/top";
 import bottom from "./components/bottom";
-import home from "./views/home/home";
+// import home from "./views/home/home";
+// import order from "./views/order/order";
+import success from "./views/success/success";
 export default {
   name: "App",
   components: {
     top,
     bottom,
-    home,
+    // home,
+    // order,
+    success,
   },
   data() {
-    return {};
+    return {
+
+    };
   },
 };
 </script>

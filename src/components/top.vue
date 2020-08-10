@@ -97,13 +97,14 @@
     /* 右边 */
     .top_right {
         /* border: 1px solid red; */
-        margin-left: 48px;
+        margin-left: 54px;
     }
 
     .language_list {
         display: flex;
         align-items: center;
         width: 100%;
+        margin-bottom: .625rem;
     }
 
     .language_list li {
@@ -148,7 +149,7 @@
         align-items: center;
         justify-content: space-around;
         margin-top: 10px;
-        margin-bottom: 15px
+        /* margin-bottom: 15px */
     }
 
     .navi_img {

@@ -366,14 +366,15 @@
                         <div>
                             At peak times, you are not guaranteed entry at the Wizarding World of Harry Potter when
                             timed entry is in place,
-                            unless you purchase the Express Pass 4 or any Express Pass 7
+                            unless you purchase the <span>Express Pass 4 </span>or any <span>Express Pass 7</span>
                         </div>
                     </div>
 
                     <div class="booking_nav">
                         <div class="dian">●</div>
                         <div>
-                            Book a Countdown Party Entry Pass on 31 Dec to celebrate 2020 New Year! Party it up from
+                            Book a <span>Countdown Party Entry Pass</span> on 31 Dec to celebrate 2020 New Year! Party
+                            it up from
                             7:00pm on 31 Dec to 2:00am on 1 Jan, exclusive to Party Pass Ticket holders
                         </div>
                     </div>
@@ -389,7 +390,8 @@
                     <div class="booking_nav">
                         <div class="dian">●</div>
                         <div>
-                            Entry gives you entry to USJ 15 minutes before it opens so you can be first in line!
+                            The <span>15-minute Early</span>Entry gives you entry to USJ 15 minutes before it opens so
+                            you can be first in line!
                         </div>
                     </div>
 
@@ -406,13 +408,14 @@
                         <div class="dian">●</div>
                         <div>
                             Get the most out of your day with insider tips from Klook’s
+                            <span>USJ guide</span>
                         </div>
                     </div>
 
                     <div class="booking_nav">
                         <div class="dian">●</div>
                         <div>
-                            Check the studio map to plan your visit
+                            Check the <span>studio map</span> to plan your visit
                         </div>
                     </div>
 
@@ -592,10 +595,9 @@
                         <div class="Options">Common problem</div>
                     </div>
 
-                    <div>Activity Q&A</div>
+                    <div class="Activity">Activity Q&A</div>
 
                     <div class="common_problem">
-
                         <div class="common_nav">
                             <div class="common_title">Q 1:</div>
                             <div class="common_text">
@@ -610,63 +612,91 @@
                                 written on the pass
                             </div>
                         </div>
-                        <div class="common_nav">
-                            <div class="common_title">A 1:</div>
-                            <div class="common_text">
-                                The passes are considered open tickets, you may enter the park on any day before the
-                                expiration date
-                                written on the pass
-                            </div>
-                        </div>
-
                     </div>
 
 
+                    <div class="common_problem">
+                        <div class="common_nav">
+                            <div class="common_title">Q 2:</div>
+                            <div class="common_text">
+                                Can I make any changes to my booking?
+                            </div>
+                        </div>
+                        <div class="common_nav">
+                            <div class="common_title">A 2:</div>
+                            <div class="common_text">
+                                Unfortunately, all confirmations are final. You cannot cancel, refund, or make changes
+                                to your booking
+                                Please carefully plan your trip and provide the correct information during the purchase.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="common_problem">
+                        <div class="common_nav">
+                            <div class="common_title">Q 3:</div>
+                            <div class="common_text">
+                                What does open date ticket mean?
+                            </div>
+                        </div>
+                        <div class="common_nav">
+                            <div class="common_title">A 3:</div>
+                            <div class="common_text">
+                                Open date ticket means you can use this pass on any day within the period of
+                                validity.The date you
+                                specified for booking is for reference only, so you may redeem the pass within 6 months
+                                from your
+                                specified date.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="common_problem">
+                        <div class="common_nav">
+                            <div class="common_title">Q 4:</div>
+                            <div class="common_text">
+                                How do I know if my booking has been confirmed?
+                            </div>
+                        </div>
+                        <div class="common_nav">
+                            <div class="common_title">A 4:</div>
+                            <div class="common_text">
+                                Your booking is confirmed once you have received the confirmation email with the voucher
+                                attached
+                                within 5 minutes after booking. You can also find your voucher within your booking
+                                details - On Web
+                                access "My Bookings" within your profile, look for this order and you should see the
+                                "View Voucher"
+                                button. On App: access "My Bookings" via the Bookings tab, look for this order and you
+                                should see the
+                                View Voucher" button.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="common_problem">
+                        <div class="common_nav">
+                            <div class="common_title">Q 5:</div>
+                            <div class="common_text">
+                                Do children need a ticket to enter? What are the age limits for a child ticket?
+                            </div>
+                        </div>
+                        <div class="common_nav">
+                            <div class="common_title">A 5:</div>
+                            <div class="common_text">
+                                Yes, children from ages 4-11 require a child ticket to enter the park. Infants under the
+                                age 4 can enter
+                                the park for free.
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
-
-
-
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!--  -->
-            123
         </div>
 
 
@@ -1157,11 +1187,12 @@
     .Related {
         margin-top: 50px;
         margin-bottom: 30px;
+        margin-left: 20px;
     }
 
     /* 轮播图 */
     .swiper {
-        width: 70%;
+        width: 67%;
         border: 1px solid red;
         margin-left: 10px;
     }
@@ -1174,7 +1205,7 @@
 
     .sunnay_box {
         /* display: flex; */
-        width: 70%;
+        width: 67%;
         border-bottom: 1px solid black;
         margin-left: 10px;
     }
@@ -1243,20 +1274,20 @@
 
     /* welcome */
     .welcome {
-        width: 70%;
+        width: 67%;
         border: 1px solid red;
         font-size: 14px;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(51, 51, 51, 1);
         line-height: 30px;
-        margin-left: 10px;
+        margin-left: 20px;
         margin-bottom: 30px;
     }
 
     /* 游玩图 */
     .figure {
-        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .figure img {
@@ -1266,6 +1297,7 @@
 
     .figure_box {
         margin-bottom: 40px;
+        margin-left: 20px;
     }
 
     /* 内容 */
@@ -1280,10 +1312,10 @@
 
     /* booking */
     .booking_box {
-        width: 70%;
+        width: 67%;
         border-top: 1px solid red;
         border-bottom: 1px solid red;
-        margin-left: 10px;
+        margin-left: 20px;
         margin-bottom: 50px;
     }
 
@@ -1309,6 +1341,10 @@
     .booking_title {
         margin-bottom: 10px;
         margin-top: 10px;
+        font-size: 18px;
+        font-family: SF Pro Text;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
     }
 
     .Options_booking {
@@ -1326,8 +1362,8 @@
 
     /* how to use */
     .how_box {
-        width: 70%;
-        border-top: 1px solid red;
+        width: 67%;
+        /* border-top: 1px solid red; */
         border-bottom: 1px solid red;
         margin-left: 20px;
     }
@@ -1376,15 +1412,16 @@
 
     /* Common problem */
     .common_big_box {
-        width: 70%;
-        border: 1px solid black;
+        width: 67%;
+        /* border-top: 1px solid black;  */
+        /* border-bottom: 1px solid black; */
+        margin-left: 20px;
     }
 
-    /* .Common_box {
-        width: 100%;
-        border: 1px solid red;
-        margin-left: 20px;
-    } */
+    .Common_box {
+        box-sizing: border-box;
+        padding-top: 50px;
+    }
 
     .common_nav {
         display: flex;
@@ -1399,6 +1436,7 @@
         font-weight: 900;
         color: rgba(51, 51, 51, 1);
         display: flex;
+        margin-right: 14px;
     }
 
     .common_text {
@@ -1411,5 +1449,24 @@
 
     .common_problem {
         width: 100%;
+        line-height: 30px;
+        margin-bottom: 20px
+    }
+
+    .Activity {
+        font-size: 18px;
+        font-family: SF Pro Display;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+        margin-bottom: 20px;
+    }
+
+
+    /* 个别字体颜色 */
+    span {
+        color: blue;
+        font-family: SF Pro Text;
+        font-weight: 500;
+        font-size: 20px;
     }
 </style>

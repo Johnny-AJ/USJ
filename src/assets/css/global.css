@@ -36,4 +36,17 @@ dd {
 .globalWith {
     width: 1000px;
     margin: 0 auto;
+    border-radius: .625rem;
+    border: 1px solid gold;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+td,
+th {
+    border: 1px solid blue;
 }
