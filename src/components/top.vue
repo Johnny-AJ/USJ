@@ -4,7 +4,7 @@
         <!-- 展示 -->
         <div class="top_top">
             <div class="top_left">
-                <img src="@/assets/images/logo.png">
+                <img src="@/assets/images/logo.png" />
             </div>
             <div class="top_right">
                 <ul class="language_list">
@@ -28,37 +28,37 @@
         <div class="top_navi">
             <div class="navi_img">
                 <a href="/">
-                    <img src="@/assets/images/header_menu_attractions_off.png" alt="游乐设施" title="游乐设施">
+                    <img src="@/assets/images/header_menu_attractions_off.png" alt="游乐设施" title="游乐设施" />
                 </a>
             </div>
             <div class="navi_img">
                 <a href="/">
-                    <img src="@/assets/images/header_menu_park_guide_off.png" alt="游乐设施" title="游乐设施">
+                    <img src="@/assets/images/header_menu_park_guide_off.png" alt="游乐设施" title="游乐设施" />
                 </a>
             </div>
             <div class="navi_img">
                 <a href="/">
-                    <img src="@/assets/images/header_menu_restaurants_off.png" alt="游乐设施" title="游乐设施">
+                    <img src="@/assets/images/header_menu_restaurants_off.png" alt="游乐设施" title="游乐设施" />
                 </a>
             </div>
             <div class="navi_img">
                 <a href="/">
-                    <img src="@/assets/images/header_menu_shops_off.png" alt="游乐设施" title="游乐设施">
+                    <img src="@/assets/images/header_menu_shops_off.png" alt="游乐设施" title="游乐设施" />
                 </a>
             </div>
             <div class="navi_img">
                 <a href="/">
-                    <img src="@/assets/images/header_menu_tickets_off.png" alt="游乐设施" title="游乐设施">
+                    <img src="@/assets/images/header_menu_tickets_off.png" alt="游乐设施" title="游乐设施" />
                 </a>
             </div>
             <div class="navi_img">
                 <a href="/">
-                    <img src="@/assets/images/header_menu_hotels_off.png" alt="游乐设施" title="游乐设施">
+                    <img src="@/assets/images/header_menu_hotels_off.png" alt="游乐设施" title="游乐设施" />
                 </a>
             </div>
             <div class="navi_img">
                 <a href="/">
-                    <img src="@/assets/images/header_menu_travel_off.png" alt="游乐设施" title="游乐设施">
+                    <img src="@/assets/images/header_menu_travel_off.png" alt="游乐设施" title="游乐设施" />
                 </a>
             </div>
         </div>
@@ -66,9 +66,7 @@
 </template>
 
 <script>
-    export default {
-
-    }
+    export default {};
 </script>
 
 <style lang="scss" scope>
@@ -83,6 +81,7 @@
 
     .top_top {
         display: flex;
+        justify-content: space-between;
         padding-top: 30px;
     }
 
@@ -104,7 +103,7 @@
         display: flex;
         align-items: center;
         width: 100%;
-        margin-bottom: .625rem;
+        margin-bottom: 0.625rem;
     }
 
     .language_list li {

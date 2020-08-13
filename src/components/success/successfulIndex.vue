@@ -1,53 +1,62 @@
 <template>
     <div class="main_nav globalWith">
+
         <div class="current_box">
 
             <div class="current_nav">
+
                 <div class="nav_nav">
+
                     <div class="current_img">
-                        <img src="../../assets/images/成功.png" alt="">
+                        <img src="../../assets/images/成功.png" alt />
                     </div>
+
                     <div class="price">
-                        <div class="price_t">You have paid <span class="prices">¥ 8900.00 </span>yuan</div>
+                        <div class="price_t">
+                            You have paid
+                            <span class="prices">¥ 8900.00</span>yuan
+                        </div>
                         <div class="price_t">Order Number：210190121589</div>
                     </div>
+
                     <div class="current_btn">
                         <div>View order details</div>
                     </div>
+
                 </div>
             </div>
 
             <div class="current_nab">
 
                 <div class="nab_box">
+
                     <div class="nab_title">Cancel and return to USJ</div>
 
                     <div class="nab_bot">
+
                         <div class="nab_clause">
                             <div class="n1">clause</div>
                             <div class="n1">Privacy protection</div>
                             <div class="n1">feedback</div>
                         </div>
+
                         <div class="nab_time">
                             <div class="time">© 1999 - 2019</div>
                             <div>
-                                <img src="../../assets/images/suo.png" alt="/">
+                                <img src="../../assets/images/suo.png" alt="/" />
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="Consumer">
-
                     Consumer tip -- PayPal Pte. Ltd. Is the holder of PayPal's value storage tool and does not need to
                     be approved by the monetary authority of Singapore. Users are advised to read
-                    <span>
-                        the terms and conditions carefully
-                    </span>
+                    <span>the terms and conditions carefully</span>
                 </div>
 
             </div>
-
         </div>
     </div>
 </template>
@@ -56,9 +65,7 @@
     export default {
         name: "successfulIndex",
         data() {
-            return {
-
-            };
+            return {};
         },
     };
 </script>
@@ -68,14 +75,13 @@
     .main_nav {
         border: 1px solid red;
         background-color: #fff;
-        width: 100%;
-        height: 100%;
+        /* width: 100%; */
+        /* height: 100%; */
     }
 
     .current_box {
         width: 55.5rem;
         /* height: 31.875rem; */
-
     }
 
     .current_nav {
@@ -89,6 +95,7 @@
 
     .current_img img {
         width: 9%;
+        // 62.5rem
     }
 
     .price_t {
@@ -116,11 +123,11 @@
 
     /*  current_nab*/
     .current_nab {
-        width: 53rem;
+        width: 97%;
         margin-top: 1.5rem;
         margin-left: 1.375rem;
         /* border: 1px solid black; */
-        margin-bottom: 2.5rem
+        margin-bottom: 2.5rem;
     }
 
     .nab_box {
@@ -146,14 +153,13 @@
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(51, 51, 51, 1);
-        margin-right: 20px
+        margin-right: 20px;
     }
 
     .nab_time {
         display: flex;
         /* align-items: center; */
         margin-right: 10px;
-
     }
 
     .time {
@@ -165,7 +171,7 @@
     }
 
     .Consumer {
-        font-size: 14px;
+        font-size: 16px;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(51, 51, 51, 1);

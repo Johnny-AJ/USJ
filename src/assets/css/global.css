@@ -34,7 +34,8 @@ dd {
 
 /* 版心宽度 */
 .globalWith {
-    width: 1000px;
+    width: 62.5rem;
+    /* width: 1000px; */
     margin: 0 auto;
     border-radius: .625rem;
     border: 1px solid gold;

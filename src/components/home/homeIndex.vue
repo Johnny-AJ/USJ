@@ -1,7 +1,8 @@
 <template>
     <div class="mains">
+
         <!-- 面包屑 -->
-        <div class="globalWith">
+        <div class="mains_breadcrumb globalWith">
             <el-breadcrumb separator-class="el-icon-arrow-right">
                 <el-breadcrumb-item>Home</el-breadcrumb-item>
                 <el-breadcrumb-item>JAPAN</el-breadcrumb-item>
@@ -9,17 +10,15 @@
                 <el-breadcrumb-item>Special</el-breadcrumb-item>
                 <el-breadcrumb-item>Theme Parks</el-breadcrumb-item>
             </el-breadcrumb>
-        </div>
+        </div> 
 
         <!-- 主体内容 -->
         <div class="main_nav globalWith">
-
             <div class="main_img">
-                <img src="../../assets/images/pic.png" alt="">
+                <img src="../../assets/images/pic.png" alt />
             </div>
 
             <div class="main_Ticket">
-
                 <!-- 左 -->
                 <div class="main_left">
                     <div class="main_title">Universal Studios Japan™ Ticket</div>
@@ -55,8 +54,10 @@
                     <div class="main_Enjoy">
                         <dl>
                             <dd>● Enjoy direct entry to Universal Studios Japan™’s 60+ attrac</dd>
-                            <dd>● Experience the thrill of the world’s # 1 ride for 5 consecutive years: The Wizarding
-                                World of Harry Potter</dd>
+                            <dd>
+                                ● Experience the thrill of the world’s # 1 ride for 5 consecutive years: The Wizarding
+                                World of Harry Potter
+                            </dd>
                             <dd>
                                 ●
                                 Make sure to catch shows, such as the Universal Spectacle Night Parade, where 100+
@@ -95,7 +96,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <!-- Package Options -->
@@ -107,7 +107,8 @@
                 <!-- 左 -->
                 <div class="selects_left">
                     <div class="selects_left_title">Select date and package options</div>
-                    <div class="selects_left_titles">Please select a visit date. The date you select is for reference
+                    <div class="selects_left_titles">
+                        Please select a visit date. The date you select is for reference
                         only
                     </div>
                     <!-- select选择器 -->
@@ -126,10 +127,18 @@
                     </el-tooltip>
                     <div class="Days">Schedule</div>
                     <div class="plain_box">
-                        <el-button plain>Ticket - A Low Season (JPY7,600-7,800)</el-button>
-                        <el-button plain>Ticket - C Regular-High Season (JPY6,900)</el-button>
-                        <el-button plain>Ticket - C Regular-High Season (JPY8,900)</el-button>
-                        <el-button plain>Ticket - C Regular-High Season (JPY7,900)</el-button>
+                        <div>
+                            <el-button plain style="width: 20.625rem;">Ticket - A Low Season (JPY7,600-7,800)
+                            </el-button>
+                            <el-button plain>Ticket - C Regular-High Season (JPY6,900)
+                            </el-button>
+                        </div>
+                        <div>
+                            <el-button plain style="width: 20.625rem;">Ticket - C Regular-High Season (JPY8,900)
+                            </el-button>
+                            <el-button plain>Ticket - C Regular-High Season (JPY7,900)
+                            </el-button>
+                        </div>
                     </div>
                     <div class="Days">Date</div>
                     <el-select v-model="value" placeholder="请选择">
@@ -145,8 +154,7 @@
                         <div class="Adult_box">
                             <div class="Adult_price">$286</div>
                             <div class="Adult_prices">$175</div>
-                            <el-input-number v-model="num" @change="handleChange" :min="1" :max="10">
-                            </el-input-number>
+                            <el-input-number v-model="num" @change="handleChange" :min="1" :max="10"></el-input-number>
                         </div>
                     </div>
                     <div class="Adult">
@@ -154,8 +162,7 @@
                         <div class="Adult_box">
                             <div class="Adult_price">$286</div>
                             <div class="Adult_prices">$175</div>
-                            <el-input-number v-model="num" @change="handleChange" :min="1" :max="10">
-                            </el-input-number>
+                            <el-input-number v-model="num" @change="handleChange" :min="1" :max="10"></el-input-number>
                         </div>
                     </div>
 
@@ -169,27 +176,26 @@
                 </div>
                 <!-- 右 -->
                 <div class="selects_right">
-
                     <div class="riselects_rightgh_title">Selected Package Details</div>
 
                     <div class="selects_nav">
-                        <img src="../../assets/images/图层11.png" alt="/">
+                        <img src="../../assets/images/图层11.png" alt="/" />
                         <div class="nav_instant">Instant Confirmation</div>
                     </div>
                     <div class="selects_nav">
-                        <img src="../../assets/images/shouhou.png" alt="/">
+                        <img src="../../assets/images/shouhou.png" alt="/" />
                         <div class="nav_instant">No Cancellation</div>
                     </div>
                     <div class="selects_nav">
-                        <img src="../../assets/images/dayin.png" alt="/">
+                        <img src="../../assets/images/dayin.png" alt="/" />
                         <div class="nav_instant">Show Mobile or Printed Voucher</div>
                     </div>
                     <div class="selects_nav">
-                        <img src="../../assets/images/riqi1.png" alt="/">
+                        <img src="../../assets/images/riqi1.png" alt="/" />
                         <div class="nav_instant">Open Date Ticket</div>
                     </div>
                     <div class="selects_nav">
-                        <img src="../../assets/images/riqi拷贝.png" alt="/">
+                        <img src="../../assets/images/riqi拷贝.png" alt="/" />
                         <div class="nav_instant">Enter Directly With Voucher</div>
                     </div>
 
@@ -225,9 +231,8 @@
                         </div>
                         <div class="select_textarea">
                             <div>●</div>
-                            <div class="textarea_nav">
-                                You can present either a printed or a mobile voucher for this activity
-                            </div>
+                            <div class="textarea_nav">You can present either a printed or a mobile voucher for this
+                                activity</div>
                         </div>
                     </div>
 
@@ -239,18 +244,14 @@
                         <!-- nav -->
                         <div class="select_textarea">
                             <div>●</div>
-                            <div class="textarea_nav">
-                                You can present either a printed or a mobile voucher for this activity
-                            </div>
+                            <div class="textarea_nav">You can present either a printed or a mobile voucher for this
+                                activity</div>
                         </div>
                         <div class="select_textarea">
                             <div>●</div>
-                            <div class="textarea_nav">
-                                You can enter the attraction directly with this voucher
-                            </div>
+                            <div class="textarea_nav">You can enter the attraction directly with this voucher</div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -259,9 +260,7 @@
             </div>
 
             <!-- 轮播图 -->
-            <div class="swiper">
-                123
-            </div>
+            <div class="swiper">123</div>
 
             <div class="Package Related">
                 <div class="Options">Most Recent Review</div>
@@ -273,7 +272,7 @@
                     <div class="sunnay_nav">
                         <!-- 头像 -->
                         <div class="Avatar">
-                            <img src="../../assets/images/组39.png" alt="">
+                            <img src="../../assets/images/组39.png" alt />
                         </div>
                         <div>
                             <div class="sunnay_title_nav">
@@ -305,30 +304,27 @@
             <div class="figure_box">
                 <!-- 游玩图 -->
                 <div class="figure">
-                    <img src="../../assets/images/组40.png" alt="">
+                    <img src="../../assets/images/组40.png" alt />
                 </div>
 
                 <!-- 内容 -->
-                <div class="Osaka">
-                    ▲ Don't miss out on all the featured activities at Universal Studios Japan in Osaka!
+                <div class="Osaka">▲ Don't miss out on all the featured activities at Universal Studios Japan in Osaka!
                 </div>
             </div>
 
             <div class="figure_box">
                 <!-- 游玩图 -->
                 <div class="figure">
-                    <img src="../../assets/images/组41.png" alt="">
+                    <img src="../../assets/images/组41.png" alt />
                 </div>
 
                 <!-- 内容 -->
-                <div class="Osaka">
-                    ▲ Don't miss out on all the featured activities at Universal Studios Japan in Osaka!
+                <div class="Osaka">▲ Don't miss out on all the featured activities at Universal Studios Japan in Osaka!
                 </div>
             </div>
 
             <!-- booking -->
             <div class="booking_box">
-
                 <div class="Package Options_booking">
                     <div class="Options">Booking Information</div>
                 </div>
@@ -341,15 +337,14 @@
                     </div>
                     <div class="booking_nav">
                         <div class="dian">●</div>
-                        <div>In the event that you do not receive an email from us, please check your Spam folder or
-                            notify us via email</div>
+                        <div>
+                            In the event that you do not receive an email from us, please check your Spam folder or
+                            notify us via email
+                        </div>
                     </div>
                 </div>
 
                 <div class="Additional_color">
-
-
-
                     <div class="booking_title">Additional Information:</div>
                     <div class="booking_nav">
                         <div class="dian">●</div>
@@ -366,14 +361,17 @@
                         <div>
                             At peak times, you are not guaranteed entry at the Wizarding World of Harry Potter when
                             timed entry is in place,
-                            unless you purchase the <span>Express Pass 4 </span>or any <span>Express Pass 7</span>
+                            unless you purchase the
+                            <span>Express Pass 4</span>or any
+                            <span>Express Pass 7</span>
                         </div>
                     </div>
 
                     <div class="booking_nav">
                         <div class="dian">●</div>
                         <div>
-                            Book a <span>Countdown Party Entry Pass</span> on 31 Dec to celebrate 2020 New Year! Party
+                            Book a
+                            <span>Countdown Party Entry Pass</span> on 31 Dec to celebrate 2020 New Year! Party
                             it up from
                             7:00pm on 31 Dec to 2:00am on 1 Jan, exclusive to Party Pass Ticket holders
                         </div>
@@ -390,7 +388,8 @@
                     <div class="booking_nav">
                         <div class="dian">●</div>
                         <div>
-                            The <span>15-minute Early</span>Entry gives you entry to USJ 15 minutes before it opens so
+                            The
+                            <span>15-minute Early</span>Entry gives you entry to USJ 15 minutes before it opens so
                             you can be first in line!
                         </div>
                     </div>
@@ -415,28 +414,21 @@
                     <div class="booking_nav">
                         <div class="dian">●</div>
                         <div>
-                            Check the <span>studio map</span> to plan your visit
+                            Check the
+                            <span>studio map</span> to plan your visit
                         </div>
                     </div>
 
                     <div class="booking_nav">
                         <div class="dian">●</div>
-                        <div>
-                            For more details on USJ shows and attractions, check the official website
-                        </div>
+                        <div>For more details on USJ shows and attractions, check the official website</div>
                     </div>
-
                 </div>
-
-
-
             </div>
-
 
             <!-- How To Use -->
 
             <div class="how_box">
-
                 <div class="Package how_use">
                     <div class="Options">How To Use</div>
                 </div>
@@ -484,8 +476,10 @@
 
                         <div class="present">
                             <div class="dian">●</div>
-                            <div>Tickets cannot be exchanged on site. You will need to repurchase if you need a
-                                different ticket type</div>
+                            <div>
+                                Tickets cannot be exchanged on site. You will need to repurchase if you need a
+                                different ticket type
+                            </div>
                         </div>
 
                         <div class="present">
@@ -495,13 +489,13 @@
 
                         <div class="present">
                             <div class="dian">●</div>
-                            <div>The voucher is transferable. Anyone can use it regardless of whose name it is booked
-                                under</div>
+                            <div>
+                                The voucher is transferable. Anyone can use it regardless of whose name it is booked
+                                under
+                            </div>
                         </div>
-
                     </div>
                 </div>
-
 
                 <div class="how_nav_box">
                     <div class="how_title">2-Day Ticket</div>
@@ -513,7 +507,8 @@
 
                         <div class="present">
                             <div class="dian">●</div>
-                            <div>Please note:
+                            <div>
+                                Please note:
                                 Keep your ticket after the first day, or you will not be able to use it for the second
                                 day. It will not be
                                 reissued if lost
@@ -521,7 +516,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <div class="how_nav_box">
                     <div class="how_title">Opening Hours:</div>
@@ -538,27 +532,29 @@
                     </div>
                 </div>
 
-
                 <div class="how_nav_box">
                     <div class="how_title">How To Get There:</div>
                     <div>
                         <div class="present">
                             <div class="dian">●</div>
-                            <div>From hotel:
+                            <div>
+                                From hotel:
                                 Check with your hotel for shuttle services to USJ
                             </div>
                         </div>
 
                         <div class="present">
                             <div class="dian">●</div>
-                            <div>By bus:
+                            <div>
+                                By bus:
                                 35-75 minutes from Kansai Airport and 45 minutes from Itami Airport
                             </div>
                         </div>
 
                         <div class="present">
                             <div class="dian">●</div>
-                            <div>By train:
+                            <div>
+                                By train:
                                 From Namba, take Hanshin Namba Line to Nishikujo (4th stop) then transfer to JR Yumesaki
                                 Line and get off
                                 at Universal City Station
@@ -575,22 +571,15 @@
                     </div>
                 </div>
 
-
                 <!-- 地图 -->
                 <div class="how_map">
-                    <img src="../../assets/images/图层14.png" alt="">
+                    <img src="../../assets/images/图层14.png" alt />
                 </div>
-
             </div>
-
 
             <!-- Common problem -->
             <div class="common_big_box">
-
-
-
                 <div class="Common_box">
-
                     <div class="Package">
                         <div class="Options">Common problem</div>
                     </div>
@@ -600,9 +589,8 @@
                     <div class="common_problem">
                         <div class="common_nav">
                             <div class="common_title">Q 1:</div>
-                            <div class="common_text">
-                                Do I have to enter the park on the date I selected when make the booking?
-                            </div>
+                            <div class="common_text">Do I have to enter the park on the date I selected when make the
+                                booking?</div>
                         </div>
                         <div class="common_nav">
                             <div class="common_title">A 1:</div>
@@ -614,13 +602,10 @@
                         </div>
                     </div>
 
-
                     <div class="common_problem">
                         <div class="common_nav">
                             <div class="common_title">Q 2:</div>
-                            <div class="common_text">
-                                Can I make any changes to my booking?
-                            </div>
+                            <div class="common_text">Can I make any changes to my booking?</div>
                         </div>
                         <div class="common_nav">
                             <div class="common_title">A 2:</div>
@@ -632,13 +617,10 @@
                         </div>
                     </div>
 
-
                     <div class="common_problem">
                         <div class="common_nav">
                             <div class="common_title">Q 3:</div>
-                            <div class="common_text">
-                                What does open date ticket mean?
-                            </div>
+                            <div class="common_text">What does open date ticket mean?</div>
                         </div>
                         <div class="common_nav">
                             <div class="common_title">A 3:</div>
@@ -652,13 +634,10 @@
                         </div>
                     </div>
 
-
                     <div class="common_problem">
                         <div class="common_nav">
                             <div class="common_title">Q 4:</div>
-                            <div class="common_text">
-                                How do I know if my booking has been confirmed?
-                            </div>
+                            <div class="common_text">How do I know if my booking has been confirmed?</div>
                         </div>
                         <div class="common_nav">
                             <div class="common_title">A 4:</div>
@@ -676,13 +655,11 @@
                         </div>
                     </div>
 
-
                     <div class="common_problem">
                         <div class="common_nav">
                             <div class="common_title">Q 5:</div>
-                            <div class="common_text">
-                                Do children need a ticket to enter? What are the age limits for a child ticket?
-                            </div>
+                            <div class="common_text">Do children need a ticket to enter? What are the age limits for a
+                                child ticket?</div>
                         </div>
                         <div class="common_nav">
                             <div class="common_title">A 5:</div>
@@ -693,13 +670,9 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </div>
-
-
     </div>
 </template>
 
@@ -708,31 +681,37 @@
         name: "homeIndex",
         data() {
             return {
-                options: [{
-                    value: '选项1',
-                    label: '黄金糕，葫芦娃救爷爷'
-                }, {
-                    value: '选项2',
-                    label: '双皮奶'
-                }, {
-                    value: '选项3',
-                    label: '蚵仔煎'
-                }, {
-                    value: '选项4',
-                    label: '龙须面'
-                }, {
-                    value: '选项5',
-                    label: '北京烤鸭'
-                }],
-                value: '',
-                num: 1
+                options: [
+                    {
+                        value: "选项1",
+                        label: "黄金糕，葫芦娃救爷爷",
+                    },
+                    {
+                        value: "选项2",
+                        label: "双皮奶",
+                    },
+                    {
+                        value: "选项3",
+                        label: "蚵仔煎",
+                    },
+                    {
+                        value: "选项4",
+                        label: "龙须面",
+                    },
+                    {
+                        value: "选项5",
+                        label: "北京烤鸭",
+                    },
+                ],
+                value: "",
+                num: 1,
             };
         },
         methods: {
             handleChange(value) {
-                console.log(value)
+                console.log(value);
             },
-        }
+        },
     };
 </script>
 
@@ -758,6 +737,12 @@
         color: #ffffff;
     }
 
+    /deep/ .el-breadcrumb {
+        margin-top: 2.3125rem;
+        margin-bottom: 1rem;
+        margin-left: .625rem;
+    }
+
     /* 按钮 */
     /deep/.el-button {
         margin-top: 5px;
@@ -767,12 +752,8 @@
 
 <style lang="scss" scope>
     .mains {
-        border: 2px solid blue;
-        width: 100%;
-    }
-
-    .el-breadcrumb {
-        margin-bottom: 20px;
+        /* border: 2px solid blue; */
+        /* width: 100%; */
     }
 
     .main_nav {
@@ -784,7 +765,8 @@
 
     .main_img {
         text-align: center;
-        margin-top: 10px;
+        margin-top: 0.625rem;
+        margin-bottom: 2.8125rem;
     }
 
     .main_img img {
@@ -794,28 +776,26 @@
 
     .main_Ticket {
         display: flex;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin-left: 10px;
-        margin-bottom: 30px;
+        margin-bottom: 3rem;
     }
 
     /* 左 */
     .main_left {
         width: 70%;
-        border: 1px solid blueviolet;
-        margin-right: 10px;
+        /* border: 1px solid blueviolet; */
+        margin-right: 1.25rem;
     }
 
     .main_star {
         display: flex;
         margin-top: 10px;
-
     }
 
     .main_score {
         display: flex;
     }
-
 
     .main_god {
         color: gold;
@@ -848,15 +828,15 @@
     }
 
     .main_end {
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Text;
         font-weight: 300;
         color: rgba(51, 51, 51, 1);
     }
 
     .main_Enjoy {
-        border: 1px solid black;
-
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
     }
 
     .main_Enjoy dd {
@@ -864,17 +844,19 @@
         font-weight: 300;
         color: rgba(51, 51, 51, 1);
         margin-bottom: 13px;
-        font-size: 2px;
+        font-size: .125rem;
     }
 
     /* 右 */
     .main_rights {
-        width: 30%;
-        border: 1px solid gold;
+        width: 27%;
+        /* border: 1px solid gold; */
+        border: 1px solid rgba(229, 229, 229, 0.7);
+        box-shadow: 0px 2px 9px 2px rgba(51, 51, 51, 0.1);
     }
 
     .right_price {
-        font-size: 30px;
+        font-size: 1.875rem;
         font-family: SF Pro Display;
         font-weight: 500;
         color: rgba(51, 51, 51, 1);
@@ -902,11 +884,12 @@
     }
 
     .right_Options {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-family: SF Pro Display;
         font-weight: 500;
         color: rgba(255, 255, 255, 1);
         margin-left: 10px;
+        line-height: 2.5rem;
     }
 
     .right_Get {
@@ -918,14 +901,14 @@
     }
 
     .right_Instant {
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Text;
         font-weight: 300;
         color: rgba(51, 51, 51, 1);
     }
 
     .right_let {
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(137, 137, 137, 1);
@@ -943,7 +926,7 @@
     /* Package */
     .Package {
         width: 35%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         border-left: 8px solid rgba(25, 82, 159, 1);
         border-radius: 4px;
         margin-left: 10px;
@@ -951,7 +934,7 @@
     }
 
     .Options {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-family: SF Pro Display;
         font-weight: 500;
         color: rgba(51, 51, 51, 1);
@@ -979,7 +962,7 @@
     }
 
     .selects_left_title {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-family: SF Pro Display;
         font-weight: 400;
         color: rgba(51, 51, 51, 1);
@@ -988,7 +971,7 @@
     }
 
     .selects_left_titles {
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Display;
         font-weight: 400;
         color: rgba(51, 51, 51, 1);
@@ -997,12 +980,20 @@
     }
 
     .Days {
-        font-size: 16px;
+        font-size: 1rem;
         font-family: SF Pro Display;
         font-weight: 400;
         color: rgba(51, 51, 51, 1);
         margin-top: 10px;
         margin-left: 10px;
+    }
+
+    .plain_box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     /* 票价 */
@@ -1023,37 +1014,37 @@
     }
 
     .Adult_titel {
-        font-size: 16px;
+        font-size: 1rem;
         font-family: SF Pro Display;
         font-weight: 400;
         color: rgba(51, 51, 51, 1);
-        margin-left: 10px
+        margin-left: 10px;
     }
 
     .Adult_box {
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 40%;
-        margin-right: 10px
+        margin-right: 10px;
     }
 
     .Adult_price {
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Display;
         font-weight: 400;
         text-decoration: line-through;
         color: rgba(51, 51, 51, 1);
-        margin-right: 10px
+        margin-right: 10px;
     }
 
     .Adult_prices {
-        font-size: 16px;
+        font-size: 1rem;
         font-family: SF Pro Display;
         font-weight: 800;
         color: #ff5305;
-        margin-right: 20px
+        margin-right: 20px;
     }
 
     /* 两个按钮 */
@@ -1066,7 +1057,7 @@
     }
 
     .step_title {
-        font-size: 12px;
+        font-size: .75rem;
         font-family: SF Pro Display;
         font-weight: 100;
         color: rgba(51, 51, 51, 1);
@@ -1104,7 +1095,7 @@
     }
 
     .quantity {
-        font-size: 16px;
+        font-size: 1rem;
         font-family: SF Pro Display;
         font-weight: 400;
         color: rgba(51, 51, 51, 1);
@@ -1139,7 +1130,7 @@
     }
 
     .nav_instant {
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Text;
         font-weight: 300;
         color: rgba(51, 51, 51, 1);
@@ -1154,7 +1145,7 @@
     }
 
     .Description {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-family: SF Pro Display;
         font-weight: 400;
         color: rgba(51, 51, 51, 1);
@@ -1171,7 +1162,7 @@
     .textarea_nav {
         /* width: 100%; */
         /* height: 50%; */
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Text;
         font-weight: 300;
         color: rgba(51, 51, 51, 1);
@@ -1222,22 +1213,22 @@
     }
 
     .sunnay_title {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-family: SF Pro Display;
         font-weight: 500;
         color: rgba(51, 51, 51, 1);
-        margin-right: 10px
+        margin-right: 10px;
     }
 
     .Avatar {
         /* width: 10%; */
-        border: 1px solid ghostwhite;
+        /* border: 1px solid ghostwhite; */
         display: inline-block;
         margin-right: 20px;
     }
 
     .Review {
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Text;
         font-weight: 300;
         color: rgba(153, 153, 153, 1);
@@ -1245,25 +1236,23 @@
     }
 
     .no {
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Text;
         font-weight: 300;
         color: rgba(51, 51, 51, 1);
         margin-bottom: 10px;
-
     }
 
     .Read {
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Text;
         font-weight: 500;
         color: rgba(25, 82, 159, 1);
         margin-bottom: 40px;
-
     }
 
     .Nov {
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Text;
         font-weight: 300;
         color: rgba(153, 153, 153, 1);
@@ -1275,14 +1264,18 @@
     /* welcome */
     .welcome {
         width: 67%;
-        border: 1px solid red;
-        font-size: 14px;
+        /* border: 1px solid red; */
+        font-size: .875rem;
+        /* font-size: 14px; */
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(51, 51, 51, 1);
-        line-height: 30px;
-        margin-left: 20px;
-        margin-bottom: 30px;
+        line-height: 1.875rem;
+        /* line-height: 30px; */
+        margin-left: 1.25rem;
+        /* margin-left: 20px; */
+        margin-bottom: 1.875rem;
+        /* margin-bottom: 30px; */
     }
 
     /* 游玩图 */
@@ -1296,18 +1289,21 @@
     }
 
     .figure_box {
-        margin-bottom: 40px;
-        margin-left: 20px;
+        margin-bottom: 2.5rem;
+        /* margin-bottom: 40px; */
+        margin-left: 1.25rem;
+        /* margin-left: 20px; */
     }
 
     /* 内容 */
     .Osaka {
-        font-size: 14px;
+        font-size: .875rem;
+        /* font-size: 14px; */
         font-family: FontAwesome;
         font-weight: 400;
         color: rgba(51, 51, 51, 1);
-        margin-left: 10px;
-        margin-top: 10px;
+        margin-left: .625rem;
+        margin-top: .625rem;
     }
 
     /* booking */
@@ -1315,13 +1311,13 @@
         width: 67%;
         border-top: 1px solid red;
         border-bottom: 1px solid red;
-        margin-left: 20px;
-        margin-bottom: 50px;
+        margin-left: 1.25rem;
+        margin-bottom: 3.125rem;
     }
 
     .booking_nav {
         display: flex;
-        font-size: 12px;
+        font-size: .75rem;
         font-family: SF Pro Text;
         font-weight: 300;
         color: rgba(51, 51, 51, 1);
@@ -1331,17 +1327,17 @@
     .Additional_color {
         /* background: rgba(255, 250, 229, 1); */
         background: pink;
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
         box-sizing: border-box;
-        padding-top: 10px;
-        margin-left: 10px;
-        padding-left: 20px;
+        padding-top: .625rem;
+        margin-left: .625rem;
+        padding-left: 1.25rem;
     }
 
     .booking_title {
         margin-bottom: 10px;
         margin-top: 10px;
-        font-size: 18px;
+        font-size: 1.125rem;
         font-family: SF Pro Text;
         font-weight: 500;
         color: rgba(51, 51, 51, 1);
@@ -1353,7 +1349,7 @@
 
     .booking_left {
         margin-left: 20px;
-        margin-bottom: 20px
+        margin-bottom: 20px;
     }
 
     .dian {
@@ -1370,7 +1366,7 @@
 
     .present {
         display: flex;
-        font-size: 12px;
+        font-size: .75rem;
         font-family: SF Pro Text;
         font-weight: 300;
         color: rgba(51, 51, 51, 1);
@@ -1378,7 +1374,7 @@
     }
 
     .how_title {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(51, 51, 51, 1);
@@ -1390,7 +1386,7 @@
     }
 
     .Admission {
-        font-size: 16px;
+        font-size: 1rem;
         font-family: SF Pro Text;
         font-weight: 300;
         color: rgba(51, 51, 51, 1);
@@ -1431,7 +1427,7 @@
 
     .common_title {
         width: 5%;
-        font-size: 16px;
+        font-size: 1rem;
         font-family: SFProDisplay-Medium;
         font-weight: 900;
         color: rgba(51, 51, 51, 1);
@@ -1441,7 +1437,7 @@
 
     .common_text {
         width: 95%;
-        font-size: 12px;
+        font-size: .75rem;
         font-family: SF Pro Display;
         font-weight: 500;
         color: rgba(51, 51, 51, 1);
@@ -1450,23 +1446,22 @@
     .common_problem {
         width: 100%;
         line-height: 30px;
-        margin-bottom: 20px
+        margin-bottom: 20px;
     }
 
     .Activity {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-family: SF Pro Display;
         font-weight: 500;
         color: rgba(51, 51, 51, 1);
         margin-bottom: 20px;
     }
 
-
     /* 个别字体颜色 */
     span {
         color: blue;
         font-family: SF Pro Text;
         font-weight: 500;
-        font-size: 20px;
+        font-size: .875rem;
     }
 </style>
