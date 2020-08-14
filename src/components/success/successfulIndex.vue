@@ -1,63 +1,54 @@
 <template>
-    <div class="main_nav globalWith">
+    <div class="success_box">
 
-        <div class="current_box">
+        <div class="success_box_nav">
 
-            <div class="current_nav">
-
-                <div class="nav_nav">
-
-                    <div class="current_img">
-                        <img src="../../assets/images/成功.png" alt />
-                    </div>
-
-                    <div class="price">
-                        <div class="price_t">
-                            You have paid
-                            <span class="prices">¥ 8900.00</span>yuan
-                        </div>
-                        <div class="price_t">Order Number：210190121589</div>
-                    </div>
-
-                    <div class="current_btn">
-                        <div>View order details</div>
-                    </div>
-
-                </div>
+            <div class="success_img">
+                <img src="../../assets/images/成功.png" alt="/">
             </div>
 
-            <div class="current_nab">
+            <div class="success_nab">
+                <div class="const">You have paid <span class="const_price">¥ 8900.00</span> yuan</div>
+                <div class="const">Order Number：210190121589</div>
+            </div>
 
-                <div class="nab_box">
-
-                    <div class="nab_title">Cancel and return to USJ</div>
-
-                    <div class="nab_bot">
-
-                        <div class="nab_clause">
-                            <div class="n1">clause</div>
-                            <div class="n1">Privacy protection</div>
-                            <div class="n1">feedback</div>
-                        </div>
-
-                        <div class="nab_time">
-                            <div class="time">© 1999 - 2019</div>
-                            <div>
-                                <img src="../../assets/images/suo.png" alt="/" />
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="Consumer">
-                    Consumer tip -- PayPal Pte. Ltd. Is the holder of PayPal's value storage tool and does not need to
-                    be approved by the monetary authority of Singapore. Users are advised to read
-                    <span>the terms and conditions carefully</span>
-                </div>
-
+            <div class="success_btn">
+                <div class="success_title">View order details</div>
             </div>
         </div>
+
+        <div class="current_nab">
+
+            <div class="nab_box">
+
+                <div class="nab_title">Cancel and return to USJ</div>
+
+                <div class="nab_bot">
+
+                    <div class="nab_clause">
+                        <div class="n1">clause</div>
+                        <div class="n1">Privacy protection</div>
+                        <div class="n1">feedback</div>
+                    </div>
+
+                    <div class="nab_time">
+                        <div class="time">© 1999 - 2019</div>
+                        <div>
+                            <img src="../../assets/images/suo.png" alt="/" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="Consumer">
+                Consumer tip -- PayPal Pte. Ltd. Is the holder of PayPal's value storage tool and does not need to
+                be approved by the monetary authority of Singapore. Users are advised to read
+                <span>the terms and conditions carefully</span>
+            </div>
+
+        </div>
+
     </div>
 </template>
 
@@ -71,63 +62,79 @@
 </script>
 
 <style lang="scss" scope>
-    /* 主体 */
-    .main_nav {
+    .success_box {
+        width: 62.5rem;
+        margin: 0 auto;
+        /* border: 1px solid red; */
+        margin-top: 2.625rem;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 4px;
+        padding-top: 2.0625rem;
+    }
+
+    .success_box_nav {
+        width: 60rem;
         border: 1px solid red;
-        background-color: #fff;
-        /* width: 100%; */
-        /* height: 100%; */
+        margin: 0 auto;
+        text-align: center;
     }
 
-    .current_box {
-        width: 55.5rem;
-        /* height: 31.875rem; */
-    }
-
-    .current_nav {
-        width: 53rem;
-        border: 1px solid red;
-        margin-top: 2.0625rem;
-        margin-left: 1.375rem;
-        box-sizing: border-box;
-        padding: 50px 0;
-    }
-
-    .current_img img {
-        width: 9%;
-        // 62.5rem
-    }
-
-    .price_t {
-        font-size: 16px;
+    .const {
+        /* display: flex; */
+        align-items: center;
+        font-size: 1rem;
         font-family: SF Pro Text;
         font-weight: 300;
+        color: rgba(0, 0, 0, 1);
+        margin-bottom: .9375rem;
     }
 
-    .current_btn {
-        width: 10rem;
-        height: 1.5rem;
+    .const_price {
+        font-size: 30px;
+        font-family: SF Pro Text;
+        font-weight: 300;
+        color: #ff6935;
+    }
+
+    .success_btn {
         border: 1px solid rgba(24, 114, 227, 1);
         border-radius: 4px;
-        line-height: 1.5rem;
-        text-align: center;
-        color: blue;
-        margin-top: 1.6875rem;
-        margin-left: 21rem;
+        line-height: 2.1875rem;
+        width: 25%;
+        margin: 0 auto;
+        margin-bottom: 4.125rem;
     }
 
-    .nav_nav {
-        /* border: 1px solid red; */
-        text-align: center;
+    .success_title {
+        font-size: 1rem;
+        font-family: SF Pro Text;
+        font-weight: 400;
+        color: rgba(24, 114, 227, 1);
     }
+
+    .success_img {
+        margin-top: 4.1875rem;
+    }
+
+    .success_img img {
+        width: 10%;
+    }
+
+
+
+
+
+
 
     /*  current_nab*/
     .current_nab {
-        width: 97%;
-        margin-top: 1.5rem;
-        margin-left: 1.375rem;
+        width: 61rem;
+        /* margin-top: 1.5rem; */
+        /* margin-left: 1.375rem; */
         /* border: 1px solid black; */
-        margin-bottom: 2.5rem;
+        /* margin-bottom: 2.5rem; */
+        margin: 0 auto;
+        height: 100%;
     }
 
     .nab_box {
@@ -177,5 +184,6 @@
         color: rgba(51, 51, 51, 1);
         text-align: center;
         margin-top: 1.5rem;
+        margin-bottom: 1.25rem;
     }
 </style>

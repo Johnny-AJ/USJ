@@ -52,7 +52,7 @@
                             <th>Product Type:</th>
                             <td>1 x Child(4-11) <div>1 x Adult</div>
                             </td>
-                            <span></span>
+                            <div></div>
                         </tr>
                     </table>
                 </div>
@@ -78,42 +78,46 @@
         <!-- 下半部分 -->
         <div class="Order_bottom">
 
+            <div class="order_bottom_box">
 
 
-            <!-- 左 -->
-            <div class="Order_bottom_left">
 
-                <div class="How">
-                    <div class="How_title">How To Use</div>
+                <!-- 左 -->
+                <div class="Order_bottom_left">
+
+                    <div class="How">
+                        <div class="How_title">How To Use</div>
+                    </div>
+
+                    <div class="order_nav">
+                        You can present either a printed or a mobile voucher for this activity You can enter the
+                        attraction
+                        directly with this voucher
+                        The voucher is valid within 180 days from the date you selected upon booking
+                    </div>
+
+                </div>
+                <!-- 右 -->
+
+                <div class="Order_bottom_right">
+
+                    <div class="How">
+                        <div class="How_title">Withdrawal rules</div>
+                    </div>
+
+                    <div class="order_title">Confirmation:</div>
+                    <div class="order_nav">
+                        You will receive a confirmation email and voucher instantly after booking
+                        In the event that you do not receive an email from us, please check your Spam folder or notify
+                        us
+                        via email
+                    </div>
+                    <div class="order_title">Cancelation:</div>
+                    <div class="order_nav">No cancellations, refunds, or changes can be made</div>
                 </div>
 
-                <div class="order_nav">
-                    You can present either a printed or a mobile voucher for this activity You can enter the
-                    attraction
-                    directly with this voucher
-                    The voucher is valid within 180 days from the date you selected upon booking
-                </div>
 
             </div>
-            <!-- 右 -->
-
-            <div class="Order_bottom_right">
-
-                <div class="How">
-                    <div class="How_title">Withdrawal rules</div>
-                </div>
-
-                <div class="order_title">Confirmation:</div>
-                <div class="order_nav">
-                    You will receive a confirmation email and voucher instantly after booking
-                    In the event that you do not receive an email from us, please check your Spam folder or notify
-                    us
-                    via email
-                </div>
-                <div class="order_title">Cancelation:</div>
-                <div class="order_nav">No cancellations, refunds, or changes can be made</div>
-            </div>
-
 
         </div>
 
@@ -133,17 +137,22 @@
 <style lang="scss" scope>
     /* 主体 */
     .main_nav {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         background-color: #fff;
-        width: 100%;
-        height: 100%;
     }
 
     /* 下半部分 */
+    .order_bottom_box {
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-between;
+    }
+
     .Order_bottom {
-        width: 38rem;
+        /* width: 38rem; */
+        width: 68%;
         height: 23rem;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         margin-left: 1.25rem;
         display: flex;
         margin-bottom: 2.5625rem;
@@ -162,7 +171,7 @@
     }
 
     .order_nav {
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(2, 0, 0, 1);
@@ -182,7 +191,7 @@
     }
 
     .order_title {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(2, 0, 0, 1);
@@ -190,15 +199,16 @@
     }
 
     .How {
-        width: 45%;
-        border: 1px solid red;
+        width: 60%;
+        // border: 1px solid red;
+
         border-left: 8px solid rgba(25, 82, 159, 1);
         border-radius: 4px;
         margin: 1.25rem;
     }
 
     .How_title {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(2, 0, 0, 1);
@@ -209,21 +219,22 @@
     /* Order */
     .Order {
         width: 96%;
-                /* background: rgba(255, 255, 255, 1);
+        /* background: rgba(255, 255, 255, 1);
                 border: 1px solid rgba(229, 229, 229, 0.7);
                 box-shadow: 0px 2px 9px 2px rgba(51, 51, 51, 0.1);
                 border-radius: 4px;
                 border: 1px solid red;
                 box-sizing: border-box; */
-        margin-top: 33px;
-        margin-left: 19px;
-        margin-bottom: 32px;
+        margin-top: 2.0625rem;
+        margin-left: 1.1875rem;
+        margin-bottom: 2rem;
+        padding-top: 2.0625rem;
     }
 
     /* Package Options */
     .Information {
         width: 30%;
-        border: 1px solid red;
+        // border: 1px solid red;
         border-left: 8px solid rgba(25, 82, 159, 1);
         border-radius: 4px;
         /* margin-left: 10px; */
@@ -232,7 +243,7 @@
     }
 
     .Information_title {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(2, 0, 0, 1);
@@ -278,7 +289,7 @@
     }
 
     .Universal {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(27, 27, 27, 1);
@@ -286,7 +297,7 @@
     }
 
     .Undone {
-        font-size: 14px;
+        font-size: .0625rem;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(102, 102, 102, 1);
@@ -294,14 +305,14 @@
     }
 
     .Purchase {
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(27, 27, 27, 1);
     }
 
     .Total {
-        font-size: 16px;
+        font-size: 1rem;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(21, 47, 73, 1);
@@ -316,7 +327,7 @@
     }
 
     table tr th {
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(27, 27, 27, 1);
@@ -325,7 +336,7 @@
     }
 
     table tr td {
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(27, 27, 27, 1);
@@ -345,12 +356,12 @@
     }
 
     .Service {
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(2, 0, 0, 1);
         line-height: 30px;
-        border-top: 1px solid red;
+        border-top: 2px solid #FFEEEEEE;
         box-sizing: border-box;
         padding-left: 1rem;
     }
@@ -358,18 +369,20 @@
     .Again {
         /* text-align: center; */
         margin-left: 3.75rem;
+        /* margin: 0 auto; */
     }
 
     .you {
         margin-top: 1.875rem;
-        margin-left: 5.5rem;
+        /* margin-left: 5.5rem; */
+        text-align: center;
     }
 
     .Book {
         width: 60%;
         background: rgba(24, 114, 227, 1);
         border-radius: 6px;
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(255, 255, 255, 1);
@@ -384,7 +397,7 @@
         width: 60%;
         background: rgba(229, 229, 229, 1);
         border-radius: 6px;
-        font-size: 14px;
+        font-size: .875rem;
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(140, 140, 140, 1);

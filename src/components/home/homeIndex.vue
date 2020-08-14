@@ -10,7 +10,7 @@
                 <el-breadcrumb-item>Special</el-breadcrumb-item>
                 <el-breadcrumb-item>Theme Parks</el-breadcrumb-item>
             </el-breadcrumb>
-        </div> 
+        </div>
 
         <!-- 主体内容 -->
         <div class="main_nav globalWith">
@@ -757,21 +757,27 @@
     }
 
     .main_nav {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         background-color: #fff;
-        width: 100%;
-        height: 100%;
     }
 
     .main_img {
         text-align: center;
-        margin-top: 0.625rem;
+        /* margin-top: 0.625rem; */
         margin-bottom: 2.8125rem;
+        padding-top: .625rem;
     }
 
     .main_img img {
         width: 98%;
-        visibility: top;
+        /* visibility: top; */
+    }
+
+    .main_title {
+        font-size: 1.875rem;
+        font-family: SF Pro Display;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 1);
     }
 
     .main_Ticket {
@@ -817,7 +823,7 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        border-top: 1px solid black;
+        border-top: 2px solid #FF97989A;
         margin: 20px 0;
     }
 
@@ -835,8 +841,8 @@
     }
 
     .main_Enjoy {
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        border-top: 2px solid #FF97989A;
+        border-bottom: 2px solid #FF97989A;
     }
 
     .main_Enjoy dd {
@@ -905,6 +911,7 @@
         font-family: SF Pro Text;
         font-weight: 300;
         color: rgba(51, 51, 51, 1);
+        margin-left: .625rem;
     }
 
     .right_let {
@@ -952,7 +959,7 @@
 
     /* 左 */
     .selects_left {
-        width: 70%;
+        width: 77%;
         border: 1px solid skyblue;
         background: rgba(255, 255, 255, 1);
         border: 1px solid rgba(229, 229, 229, 0.7);
@@ -1139,9 +1146,10 @@
 
     /* Package_nav */
     .Package_nav {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         border-left: 8px solid rgba(25, 82, 159, 1);
         border-radius: 4px;
+        margin-bottom: 5px;
     }
 
     .Description {
@@ -1162,7 +1170,7 @@
     .textarea_nav {
         /* width: 100%; */
         /* height: 50%; */
-        font-size: .875rem;
+        font-size: 12px;
         font-family: SF Pro Text;
         font-weight: 300;
         color: rgba(51, 51, 51, 1);
@@ -1197,7 +1205,7 @@
     .sunnay_box {
         /* display: flex; */
         width: 67%;
-        border-bottom: 1px solid black;
+        border-bottom: .125rem solid #FFAAAAAA;
         margin-left: 10px;
     }
 
@@ -1309,8 +1317,8 @@
     /* booking */
     .booking_box {
         width: 67%;
-        border-top: 1px solid red;
-        border-bottom: 1px solid red;
+        border-top: .125rem solid #FFAAAAAA;
+        border-bottom: .125rem solid #FFAAAAAA;
         margin-left: 1.25rem;
         margin-bottom: 3.125rem;
     }
@@ -1326,7 +1334,7 @@
 
     .Additional_color {
         /* background: rgba(255, 250, 229, 1); */
-        background: pink;
+        background: #fffbe6;
         margin-bottom: 2.5rem;
         box-sizing: border-box;
         padding-top: .625rem;
@@ -1360,7 +1368,7 @@
     .how_box {
         width: 67%;
         /* border-top: 1px solid red; */
-        border-bottom: 1px solid red;
+        border-bottom: .125rem solid #FFAAAAAA;
         margin-left: 20px;
     }
 

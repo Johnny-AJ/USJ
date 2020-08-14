@@ -23,27 +23,27 @@ const routes = [
   //   redirect: { name: 'login' }
   // },
   {
-    path: '/',
+    path: '/',  // 首页
     name: 'homeIndex',
     component: () => import('../views/home/home.vue')
   },
   {
-    path: '/orderIndex',
+    path: '/orderIndex',  // 订单详情
     name: 'orderIndex',
     component: () => import('../views/order/order.vue')
   },
   {
-    path: '/successfulIndex',
+    path: '/successfulIndex',  // 订单成功  
     name: 'successfulIndex',
     component: () => import('../views/success/success.vue')
   },
   {
-    path: '/fillIndex',
+    path: '/fillIndex',  // 填写信息
     name: 'fillIndex',
     component: () => import('../views/fill/fill.vue')
   },
   {
-    path: '/paymentIndex',
+    path: '/paymentIndex',  // 支付页
     name: 'paymentIndex',
     component: () => import('../views/payment/payment.vue')
   }

@@ -1,73 +1,78 @@
 <template>
-
     <div class="main_nav globalWith">
-
         <!-- ① Traveler's Information  -->
         <div class="fill_box">
-
             <!-- fill_left -->
             <div class="fill_left">
-
                 <div class="fill_color">
-                    <div class="fill_title">① Traveler's Information </div>
+                    <div class="fill_title">① Traveler's Information</div>
                 </div>
 
                 <!-- 内容盒子 -->
                 <div class="select_all">
-
                     <div class="select_box">
                         <!-- 1 -->
                         <div>
-                            <div class="select_title">Title ＊</div>
+                            <div class="select_title">
+                                Title
+                                <span class="select_icont">*</span>
+                            </div>
                             <div>
                                 <el-select v-model="value" placeholder="Please " style="width: 5.4375rem;">
                                     <el-option v-for="item in options" :key="item.value" :label="item.label"
-                                        :value="item.value">
-                                    </el-option>
+                                        :value="item.value"></el-option>
                                 </el-select>
                             </div>
                         </div>
 
                         <!-- 2 -->
                         <div>
-                            <div class="select_title">First Name (as on Travel Document) ＊</div>
+                            <div class="select_title">
+                                First Name (as on Travel Document)
+                                <span class="select_icont">*</span>
+                            </div>
                             <div>
-                                <el-input placeholder="As shown on passport" style="width: 14rem;">
-                                </el-input>
+                                <el-input placeholder="As shown on passport" style="width: 14rem;"></el-input>
                             </div>
                         </div>
 
                         <!-- 3 -->
                         <div class="select_three">
-                            <div class="select_title">Family Name (as on Travel Document) ＊</div>
+                            <div class="select_title">
+                                Family Name (as on Travel Document)
+                                <span class="select_icont">*</span>
+                            </div>
                             <div>
-                                <el-input placeholder="As shown on passport" style="width: 14rem;">
-                                </el-input>
+                                <el-input placeholder="As shown on passport" style="width: 14rem;"></el-input>
                             </div>
                         </div>
                     </div>
 
                     <!-- 4 -->
                     <div class="select_four">
-                        <div class="select_title">Country/Region of Travel Document</div>
+                        <div class="select_title">
+                            Country/Region of Travel Document
+                            <span class="select_icont">*</span>
+                        </div>
                         <div>
                             <el-select v-model="value" placeholder="Please select " style="width: 21.25rem;">
                                 <el-option v-for="item in options" :key="item.value" :label="item.label"
-                                    :value="item.value">
-                                </el-option>
+                                    :value="item.value"></el-option>
                             </el-select>
                         </div>
                     </div>
 
                     <!-- 5 -->
                     <div class="select_five">
-                        <div class="select_title">Country Code＊</div>
+                        <div class="select_title">
+                            Country Code
+                            <span class="select_icont">*</span>
+                        </div>
                         <div class="select_nab">
                             <div class="select_el">
                                 <el-select placeholder="Please select " style="width: 17rem;">
                                     <el-option v-for="item in options" :key="item.value" :label="item.label"
-                                        :value="item.value">
-                                    </el-option>
+                                        :value="item.value"></el-option>
                                 </el-select>
                             </div>
                             <div>
@@ -75,27 +80,23 @@
                                 </el-input>
                             </div>
                         </div>
-
                     </div>
 
                     <!-- 6 -->
                     <div class="select_six">
                         <div class="select_title">
                             Email Address (your voucher will be sent here, make sure it is correct)
-                            ＊
+                            <span class="select_icont">*</span>
                         </div>
                         <div>
                             <el-input placeholder="请输入内容" style="width: 35rem;"></el-input>
                         </div>
                     </div>
                 </div>
-
             </div>
-
 
             <!-- fill_right -->
             <div class="fill_right">
-
                 <div class="right_t">
                     <div class="right_bb">
                         <div class="right_title">Universal Studios Japan™ Ticket</div>
@@ -120,13 +121,10 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <div class="right_b">
-
                     <div class="right_tnab">
-
                         <div class="right_Total">
                             <div class="Total_title">Total</div>
                             <div class="Total_price">¥ 822.0</div>
@@ -136,31 +134,27 @@
                             <div class="Total_title">Payment Amount</div>
                             <div class="Total_prices">¥ 822.0</div>
                         </div>
-
                     </div>
 
                     <div class="right_credits">
                         <div class="right_booking">Get 91 credits for this booking</div>
                         <div class="right_img">
-                            <img src="../../assets/images/jifen.png" alt="/">
+                            <img src="../../assets/images/jifen.png" alt="/" />
                         </div>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
 
         <!-- ② Payment Type  -->
         <div class="Payment">
             <div class="Payment_color">
-                <div class="Payment_title">② Payment Type </div>
+                <div class="Payment_title">② Payment Type</div>
             </div>
             <div class="Payment_na">
                 <div class="Payment_nab">
-                    <div>
-                        <img src="../../assets/images/suo.png" alt="/">
+                    <div class="Payment_nab_img">
+                        <img src="../../assets/images/纸币_人民币_o.png" alt="/" />
                     </div>
                     <div class="Payment_Use">Use Promo Code</div>
                 </div>
@@ -172,7 +166,7 @@
             <div class="paypal_box">
                 <div class="paypal_ti">
                     <div>
-                        <img src="../../assets/images/图层2.png" alt="/">
+                        <img src="../../assets/images/图层2.png" alt="/" />
                     </div>
                     <div class="paypal_All">All card information is fully encrypted, secure, and protected.</div>
                 </div>
@@ -181,12 +175,11 @@
                         <el-radio v-model="radio" label="1">paypal</el-radio>
                     </div>
                     <div class="paypal_img">
-                        <img src="../../assets/images/图层3.png" alt="/">
+                        <img src="../../assets/images/图层3.png" alt="/" />
                     </div>
                 </div>
             </div>
         </div>
-
 
         <!-- PayNow -->
         <div class="PayNow">
@@ -203,51 +196,46 @@
 
         <!-- Data Security -->
         <div class="Security">
-
             <!-- 1 -->
             <div class="Data">
                 <div class="Date_nab">
                     <div>
-                        <img src="../../assets/images/suo.png" alt="/">
+                        <img src="../../assets/images/suo.png" alt="/" />
                     </div>
                     <div class="Data_title">Data Security</div>
                 </div>
                 <div class="Data_text">
                     Your details are safe with us. All data is encrypted and transmitted securely with an SSL
-                    protocol.<span>Privacy Statement</span>
+                    protocol.
+                    <span>Privacy Statement</span>
                 </div>
             </div>
-
 
             <!-- 2 -->
             <div class="Data">
                 <div class="Date_nab">
                     <div>
-                        <img src="../../assets/images/suo.png" alt="/">
+                        <img src="../../assets/images/suo.png" alt="/" />
                     </div>
                     <div class="Data_title">Data Security</div>
                 </div>
                 <div class="Data_text">
-
                     How do I pay?
                     Can I pay by cash?
                     Do you have a physical office for me to buy from?
                     Is my payment secure?
-                                                
                 </div>
             </div>
-
 
             <!-- 3 -->
             <div class="Data">
                 <div class="Date_nab">
                     <div>
-                        <img src="../../assets/images/suo.png" alt="/">
+                        <img src="../../assets/images/suo.png" alt="/" />
                     </div>
                     <div class="Data_title">Data Security</div>
                 </div>
                 <div class="Data_text">
-
                     800931187 (Hong Kong)
                     (+886) 2-55940490 (Taiwan)
                     (+65) 3158-3270 (Singapore)
@@ -262,13 +250,9 @@
                     1203-2611 (Vietnam)
                     0808-101-7040 (United Kingdom)
                     000800-852-2038 (India)
-                                                
                 </div>
             </div>
-
-
         </div>
-
     </div>
 </template>
 
@@ -277,25 +261,31 @@
         name: "fillIndex",
         data() {
             return {
-                options: [{
-                    value: '选项1',
-                    label: '黄金糕'
-                }, {
-                    value: '选项2',
-                    label: '双皮奶'
-                }, {
-                    value: '选项3',
-                    label: '蚵仔煎'
-                }, {
-                    value: '选项4',
-                    label: '龙须面'
-                }, {
-                    value: '选项5',
-                    label: '北京烤鸭'
-                }],
-                value: '',
-                label: false
-            }
+                options: [
+                    {
+                        value: "选项1",
+                        label: "黄金糕",
+                    },
+                    {
+                        value: "选项2",
+                        label: "双皮奶",
+                    },
+                    {
+                        value: "选项3",
+                        label: "蚵仔煎",
+                    },
+                    {
+                        value: "选项4",
+                        label: "龙须面",
+                    },
+                    {
+                        value: "选项5",
+                        label: "北京烤鸭",
+                    },
+                ],
+                value: "",
+                label: false,
+            };
         },
     };
 </script>
@@ -303,18 +293,20 @@
 <style lang="scss" scope>
     /* 主体 */
     .main_nav {
-        border: 1px solid red;
+        // border: 1px solid red;
         background-color: #fff;
         /* width: 100%; */
         /* height: 100%; */
     }
 
     .fill_box {
-        border: 1px solid red;
+        // border: 1px solid red;
         display: flex;
         margin-top: 2.5rem;
         margin-left: 1.1875rem;
         margin-bottom: 1.25rem;
+        box-sizing: border-box;
+        padding-top: 1.25rem;
     }
 
     /* fill_left */
@@ -326,6 +318,10 @@
         border: 1px solid rgba(235, 235, 235, 1);
         box-shadow: 0px 2px 7px 1px rgba(51, 51, 51, 0.1);
         margin-right: 20px;
+    }
+
+    .select_icont {
+        color: red;
     }
 
     .fill_color {
@@ -387,7 +383,7 @@
     /* fill_right */
     .fill_right {
         width: 30%;
-        border: 1px solid gold;
+        // border: 1px solid gold;
         margin-right: 1.375rem;
     }
 
@@ -396,11 +392,11 @@
         background: rgba(255, 255, 255, 1);
         border: 1px solid rgba(235, 235, 235, 1);
         box-shadow: 0px 2px 7px 1px rgba(51, 51, 51, 0.1);
-        margin-bottom: .625rem;
+        margin-bottom: 0.625rem;
     }
 
     .right_bb {
-        border-bottom: 1px solid red;
+        border-bottom: 0.125rem solid #ffcccccc;
         margin-bottom: 1.5rem;
     }
 
@@ -502,7 +498,7 @@
         align-items: center;
         justify-content: space-around;
         line-height: 50px;
-        border-top: 1px solid red;
+        border-top: 0.125rem solid #ffcccccc;
     }
 
     /* ② Payment Type */
@@ -518,7 +514,6 @@
 
     .Payment_color {
         background: rgba(24, 114, 227, 1);
-
     }
 
     .Payment_title {
@@ -537,7 +532,7 @@
         justify-content: center;
         border: 1px solid rgba(24, 114, 227, 1);
         border-radius: 4px;
-        line-height: 30px;
+        line-height: 1.0625rem;
         /* text-align: center; */
         margin-left: 2rem;
         margin-top: 1rem;
@@ -552,7 +547,7 @@
         font-family: SF Pro Text;
         font-weight: 400;
         color: rgba(24, 114, 227, 1);
-        margin-left: .5625rem;
+        margin-left: 0.5625rem;
     }
 
     /* paypal */
@@ -570,7 +565,7 @@
 
     .paypal_box {
         width: 90%;
-        border: 1px solid gold;
+        border: 1px solid #FFCCCCCC;
         margin-left: 1.5625rem;
         margin-bottom: 2.8125rem;
     }
@@ -580,7 +575,7 @@
         font-family: SF Pro Text;
         font-weight: 300;
         color: rgba(51, 51, 51, 1);
-        margin-left: .625rem;
+        margin-left: 0.625rem;
     }
 
     .paypal_ti {
@@ -589,7 +584,6 @@
         border: 1px solid rgba(238, 238, 238, 1);
         line-height: 1.875rem;
         padding-left: 2.1875rem;
-
     }
 
     .paypal_nab {
@@ -622,7 +616,7 @@
         font-family: SF Pro Text;
         font-weight: 300;
         color: rgba(51, 51, 51, 1);
-        margin-left: .9375rem;
+        margin-left: 0.9375rem;
     }
 
     .PayNow_btn {
@@ -645,7 +639,7 @@
     .Security {
         width: 67%;
         height: 32.5rem;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
         margin-left: 1.1875rem;
         display: flex;
         /* align-items: center; */
@@ -670,7 +664,7 @@
         font-family: SF Pro Text;
         font-weight: 300;
         color: rgba(51, 51, 51, 1);
-        margin-left: .5rem;
+        margin-left: 0.5rem;
     }
 
     .Data_text {

@@ -36,9 +36,10 @@ dd {
 .globalWith {
     width: 62.5rem;
     /* width: 1000px; */
+    height: 100%;
     margin: 0 auto;
     border-radius: .625rem;
-    border: 1px solid gold;
+    /* border: 1px solid gold; */
 }
 
 

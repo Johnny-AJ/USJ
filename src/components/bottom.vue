@@ -1,8 +1,7 @@
 <template>
   <div class="bottom">
     <!-- 底部 -->
-    <div class="nav_Box ImgWith">
-
+    <div class="nav_Box globalWith">
       <!-- 内容 -->
       <div class="ItemBox">
         <dl>
@@ -138,136 +137,137 @@
 </template>
 
 <script>
-  export default {
-    name: "bottom",
-    data() {
-      return {
-        // imgSrc: require('../assets/images/bg_main1.png')
-      };
-    },
-  };
+export default {
+  name: "bottom",
+  data() {
+    return {
+      // imgSrc: require('../assets/images/bg_main1.png')
+    };
+  },
+};
 </script>
 
 <style lang="scss" scope>
-  .bottom {
-    /* padding-bottom: 20px; */
-    /* border: 1px solid red; */
-    width: 100%;
-    /* margin: 0 auto; */
-    /* background-image: url("@/assets/images/bg_main1.png"); */
-    background-image: url("../assets/images/bg_main.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    position: relative;
-  }
+.bottom {
+  /* padding-bottom: 20px; */
+  /* border: 1px solid red; */
+  width: 100%;
+  /* margin: 0 auto; */
+  /* background-image: url("@/assets/images/bg_main1.png"); */
+  background-image: url("../assets/images/bg_main.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 4.375rem;
+}
 
-  .ImgWith {
-    width: 1000px;
-    margin: 0 auto;
-  }
+// .ImgWith {
+//   width: 1000px;
+//   margin: 0 auto;
+// }
 
-  .nav_Box {
-    /* width: 10%; */
-    display: flex;
-  }
+.nav_Box {
+  /* width: 10%; */
+  display: flex;
+}
 
-  .ItemBox {
-    width: 18.3%;
-    min-height: 158px;
-    /* border: 1px solid yellow; */
-    border-right: 1px dotted #fff;
-    margin-right: 10px;
-    padding-right: 10px;
-  }
+.ItemBox {
+  width: 18.3%;
+  min-height: 158px;
+  /* border: 1px solid yellow; */
+  border-right: 1px dotted #fff;
+  margin-right: 10px;
+  padding-right: 10px;
+}
 
-  .ItemBox dt {
-    width: 160px;
-    height: 26px;
-    background: rgba(255, 255, 255, 1);
-    opacity: 0.5;
-    border-radius: 4px;
-    margin: 0 0 8px;
-    line-height: 26px;
-    font-size: 14px;
-  }
+.ItemBox dt {
+  width: 160px;
+  height: 26px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 0.5;
+  border-radius: 4px;
+  margin: 0 0 8px;
+  line-height: 26px;
+  font-size: 14px;
+}
 
-  .ItemBox dd {
-    padding: 2px 5px 5px;
-    margin: 0;
-    font-size: 14px;
-    color: #fff;
-    font-size: 14px;
-  }
+.ItemBox dd {
+  padding: 2px 5px 5px;
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+  font-size: 14px;
+}
 
-  .ItemBox dd a {
-    color: #fff;
-    font-size: 14px;
-  }
+.ItemBox dd a {
+  color: #fff;
+  font-size: 14px;
+}
 
-  /* 酒店 */
-  .ItemBox_last dd {
-    padding: 2px 5px 5px;
-    font-size: 14px;
-  }
+/* 酒店 */
+.ItemBox_last dd {
+  padding: 2px 5px 5px;
+  font-size: 14px;
+}
 
-  .ItemBox_last dd a {
-    color: #fff;
-    font-size: 14px;
-  }
+.ItemBox_last dd a {
+  color: #fff;
+  font-size: 14px;
+}
 
-  .ItemBox_last {
-    width: 20%;
-    /* border: 1px solid yellow; */
-  }
+.ItemBox_last {
+  width: 20%;
+  /* border: 1px solid yellow; */
+}
 
-  .ItemBox_last dt {
-    width: 160px;
-    height: 26px;
-    background: rgba(255, 255, 255, 1);
-    opacity: 0.5;
-    border-radius: 4px;
-    margin: 0 0 8px;
-    line-height: 26px;
-    font-size: 14px;
-  }
+.ItemBox_last dt {
+  width: 160px;
+  height: 26px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 0.5;
+  border-radius: 4px;
+  margin: 0 0 8px;
+  line-height: 26px;
+  font-size: 14px;
+}
 
-  .item_btn {
-    background: rgba(19, 47, 109, 1);
-    border-radius: 4px;
-    line-height: 34px;
-    width: 160px;
-  }
+.item_btn {
+  background: rgba(19, 47, 109, 1);
+  border-radius: 4px;
+  line-height: 34px;
+  width: 160px;
+}
 
-  .item_btn a {
-    color: #fff;
-    font-size: 14px;
-  }
+.item_btn a {
+  color: #fff;
+  font-size: 14px;
+}
 
-  /* logo */
-  .logo {
-    width: 84px;
-    height: 84px;
-    background: rgba(255, 255, 255, 1);
-    opacity: 0.6;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 84px;
-    margin-left: 600px;
-    margin-top: 41px;
-    margin-bottom: 30px;
-  }
+/* logo */
+.logo {
+  width: 84px;
+  height: 84px;
+  background: rgba(255, 255, 255, 1);
+  opacity: 0.6;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 84px;
+  margin-left: 600px;
+  margin-top: 41px;
+  margin-bottom: 30px;
+}
 
-  .logo_l1 {
-    font-size: 18px;
-    font-family: SF Pro Text;
-    font-weight: 400;
-    color: rgba(4, 92, 230, 1);
-  }
+.logo_l1 {
+  font-size: 18px;
+  font-family: SF Pro Text;
+  font-weight: 400;
+  color: rgba(4, 92, 230, 1);
+}
 
-  .color {
-    width: 100%;
-    height: 65px;
-    background: rgba(19, 47, 109, 1);
-    opacity: 0.3;
-  }
+.color {
+  width: 100%;
+  height: 65px;
+  background: rgba(19, 47, 109, 1);
+  opacity: 0.3;
+}
 </style>
