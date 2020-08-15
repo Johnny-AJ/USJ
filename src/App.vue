@@ -8,13 +8,13 @@
   </div>
 </template>
 <script>
-import top from "./components/top";  // 头部
-import bottom from "./components/bottom";  // 底部
-import home from "./views/home/home";  // 首页
-import order from "./views/order/order";  // 订单详情
-import success from "./views/success/success";  // 成功页
-import fill from "./views/fill/fill";  // 填写信息
-import payment from "./views/payment/payment";  // 支付页
+import top from "./components/top"; // 头部
+import bottom from "./components/bottom"; // 底部
+import home from "./views/home/home"; // 首页
+import order from "./views/order/order"; // 订单详情
+import success from "./views/success/success"; // 成功页
+import fill from "./views/fill/fill"; // 填写信息
+import payment from "./views/payment/payment"; // 支付页
 export default {
   name: "App",
   components: {
@@ -27,9 +27,7 @@ export default {
     payment,
   },
   data() {
-    return {
-
-    };
+    return {};
   },
 };
 </script>

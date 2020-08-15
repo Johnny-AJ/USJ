@@ -1,10 +1,11 @@
 <template>
     <!-- 顶部 -->
     <div class="top globalWith">
+
         <!-- 展示 -->
         <div class="top_top">
             <div class="top_left">
-                <img src="@/assets/images/logo.png" />
+                <img src="@/assets/images/logo1.png" />
             </div>
             <div class="top_right">
                 <ul class="language_list">
@@ -24,6 +25,7 @@
                 </ul>
             </div>
         </div>
+
         <!-- 导航栏 -->
         <div class="top_navi">
             <div class="navi_img">
@@ -62,6 +64,7 @@
                 </a>
             </div>
         </div>
+
     </div>
 </template>
 
@@ -77,6 +80,7 @@
         background-position: top center;
         background-repeat: no-repeat;
         position: relative; */
+        /* padding-bottom: 66px; */
     }
 
     .top_top {
@@ -162,5 +166,9 @@
 
     .navi_img img {
         visibility: top;
+    }
+
+    .navi_img a:hover {
+        background-color: blue;
     }
 </style>

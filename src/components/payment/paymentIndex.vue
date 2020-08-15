@@ -1,163 +1,166 @@
 <template>
     <div class="payment_nav globalWith">
 
-        <div class="payment_box">
+        <!-- <div class="asd"> -->
 
-            <div class="payment_left">
-                <div class="payment_content">
-                    <!-- 1 -->
-                    <div class="p31">
-                        <div>
-                            <img src="../../assets/images/图层3.png" alt="/">
-                        </div>
-                        <div class="p30">
-                            <div class="p33">
-                                <img src="../../assets/images/图层4.png" alt="">
-                            </div>
-                            <div class="payment_price">$ 1,918.00 </div>
-                            <div class="p33">
-                                <img src="../../assets/images/xiala2拷贝.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+            <div class="payment_box">
 
-                    <div class="payment_title">Hello, little! <div class="payment_you">Is this not you?</div>
-                    </div>
-
-                    <div class="paymene_complete">
-                        <div class="cont1">
-                            <img src="../../assets/images/suo.png" alt="/">
-                        </div>
-                        <div class="payment_add">Please add a credit or debit card to complete the purchase.</div>
-                    </div>
-
-                    <div class="payment_input">
-                        <div>
-                            <el-input v-model="input" placeholder="First Name" style="width: 220px;"></el-input>
-                        </div>
-                        <div>
-                            <el-input v-model="input" placeholder="Family Name" style="width: 220px;"></el-input>
-                        </div>
-                    </div>
-
-                    <div class="payment_multiple">
-                        <div>
-                            <img src="../../assets/images/图层12.png" alt="">
-                        </div>
-                        <div>
-                            <img src="../../assets/images/图层15.png" alt="">
-                        </div>
-                        <div>
-                            <img src="../../assets/images/图层16.png" alt="">
-                        </div>
-                        <div>
-                            <img src="../../assets/images/图层15.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="payment_Billing">
-                        <el-input v-model="input" placeholder="The card number"></el-input>
-                    </div>
-
-                    <div class="payment_Valid">
-                        <div>
-                            <div class="font_s">Valid term</div>
+                <div class="payment_left">
+                    <div class="payment_content">
+                        <!-- 1 -->
+                        <div class="p31">
                             <div>
-                                <el-input v-model="input" placeholder="MM/YY" style="width: 220px;"></el-input>
+                                <img src="../../assets/images/图层3.png" alt="/">
+                            </div>
+                            <div class="p30">
+                                <div class="p33">
+                                    <img src="../../assets/images/图层4.png" alt="">
+                                </div>
+                                <div class="payment_price">$ 1,918.00 </div>
+                                <div class="p33">
+                                    <img src="../../assets/images/xiala2拷贝.png" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="font_s">CSC</div>
+
+                        <div class="payment_title">Hello, little! <div class="payment_you">Is this not you?</div>
+                        </div>
+
+                        <div class="paymene_complete">
+                            <div class="cont1">
+                                <img src="../../assets/images/suo.png" alt="/">
+                            </div>
+                            <div class="payment_add">Please add a credit or debit card to complete the purchase.</div>
+                        </div>
+
+                        <div class="payment_input">
                             <div>
-                                <el-input v-model="input" placeholder="The last 3 digits" style="width: 220px;"
-                                    suffix-icon="el-icon-bank-card">
-                                </el-input>
+                                <el-input v-model="input" placeholder="First Name" style="width: 220px;"></el-input>
+                            </div>
+                            <div>
+                                <el-input v-model="input" placeholder="Family Name" style="width: 220px;"></el-input>
+                            </div>
+                        </div>
+
+                        <div class="payment_multiple">
+                            <div>
+                                <img src="../../assets/images/图层12.png" alt="">
+                            </div>
+                            <div>
+                                <img src="../../assets/images/图层15.png" alt="">
+                            </div>
+                            <div>
+                                <img src="../../assets/images/图层16.png" alt="">
+                            </div>
+                            <div>
+                                <img src="../../assets/images/图层15.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="payment_Billing">
+                            <el-input v-model="input" placeholder="The card number"></el-input>
+                        </div>
+
+                        <div class="payment_Valid">
+                            <div>
+                                <div class="font_s">Valid term</div>
+                                <div>
+                                    <el-input v-model="input" placeholder="MM/YY" style="width: 220px;"></el-input>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="font_s">CSC</div>
+                                <div>
+                                    <el-input v-model="input" placeholder="The last 3 digits" style="width: 220px;"
+                                        suffix-icon="el-icon-bank-card">
+                                    </el-input>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="payment_Billing">
+                            <div class="payment_address">
+                                <div class="font_s">Billing address</div>
+                                <div class="blue">add</div>
+                            </div>
+                            <div>
+                                <el-select v-model="value" placeholder="Add shipping address" style="width: 100%;">
+                                    <el-option v-for="item in options" :key="item.value" :label="item.label"
+                                        :value="item.value">
+                                    </el-option>
+                                </el-select>
+                            </div>
+                        </div>
+
+
+                        <div class="add_btn">
+                            <div class="btn_add">Add</div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="payment_right">
+
+                    <div class="payment_right_nav">
+
+                        <div class="PayPal_img">
+                            <img src="../../assets/images/scr_vp_fprd_shield_bags.png" alt="">
+                        </div>
+                        <div class="PayPal_title">
+                            <div>PayPal is a safer and more</div>
+                            <div>convenient way to pay</div>
+                        </div>
+                        <div class="security">
+                            <div class="financial">
+                                No matter where you shop, we will help you to ensure the security of your financial
+                                information.
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="current_nab">
+
+                <div class="nab_box">
+
+                    <div class="nab_title">Cancel and return to USJ</div>
+
+                    <div class="nab_bot">
+
+                        <div class="nab_clause">
+                            <div class="n1">clause</div>
+                            <div class="n1">Privacy protection</div>
+                            <div class="n1">feedback</div>
+                        </div>
+
+                        <div class="nab_time">
+                            <div class="time">© 1999 - 2019</div>
+                            <div>
+                                <img src="../../assets/images/suo.png" alt="/" />
                             </div>
                         </div>
                     </div>
 
-
-                    <div class="payment_Billing">
-                        <div class="payment_address">
-                            <div class="font_s">Billing address</div>
-                            <div class="blue">add</div>
-                        </div>
-                        <div>
-                            <el-select v-model="value" placeholder="Add shipping address" style="width: 100%;">
-                                <el-option v-for="item in options" :key="item.value" :label="item.label"
-                                    :value="item.value">
-                                </el-option>
-                            </el-select>
-                        </div>
-                    </div>
-
-
-                    <div class="add_btn">
-                        <div class="btn_add">Add</div>
-                    </div>
-
-
                 </div>
-            </div>
 
-
-            <div class="payment_right">
-
-                <div class="payment_right_nav">
-
-                    <div class="PayPal_img">
-                        <img src="../../assets/images/scr_vp_fprd_shield_bags.png" alt="">
-                    </div>
-                    <div class="PayPal_title">
-                        <div>PayPal is a safer and more</div>
-                        <div>convenient way to pay</div>
-                    </div>
-                    <div class="security">
-                        <div class="financial">
-                            No matter where you shop, we will help you to ensure the security of your financial
-                            information.
-                        </div>
-                    </div>
-
+                <div class="Consumer">
+                    Consumer tip -- PayPal Pte. Ltd. Is the holder of PayPal's value storage tool and does not need to
+                    be approved by the monetary authority of Singapore. Users are advised to read
+                    <span>the terms and conditions carefully</span>
                 </div>
 
             </div>
 
-        </div>
-
-
-        <div class="current_nab">
-
-            <div class="nab_box">
-
-                <div class="nab_title">Cancel and return to USJ</div>
-
-                <div class="nab_bot">
-
-                    <div class="nab_clause">
-                        <div class="n1">clause</div>
-                        <div class="n1">Privacy protection</div>
-                        <div class="n1">feedback</div>
-                    </div>
-
-                    <div class="nab_time">
-                        <div class="time">© 1999 - 2019</div>
-                        <div>
-                            <img src="../../assets/images/suo.png" alt="/" />
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="Consumer">
-                Consumer tip -- PayPal Pte. Ltd. Is the holder of PayPal's value storage tool and does not need to
-                be approved by the monetary authority of Singapore. Users are advised to read
-                <span>the terms and conditions carefully</span>
-            </div>
-
-        </div>
-
+        <!-- </div> -->
 
     </div>
 </template>
@@ -191,7 +194,7 @@
 
 <style lang="scss" scope>
     .payment_nav {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         background-color: #fff;
         padding-top: 33px;
     }
@@ -199,7 +202,7 @@
     .payment_box {
         width: 97%;
         height: 100%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         box-sizing: border-box;
         margin: 0 auto;
         display: flex;
@@ -396,4 +399,8 @@
         font-weight: 400;
         color: rgba(51, 51, 51, 1);
     }
+
+    /* .asd{
+        padding-top: 30px;
+    } */
 </style>

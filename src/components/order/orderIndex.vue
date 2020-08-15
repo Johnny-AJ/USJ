@@ -390,7 +390,6 @@
         text-align: center;
         margin-top: 13px;
         margin-bottom: 10px;
-
     }
 
     .Cancel {

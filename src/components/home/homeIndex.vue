@@ -108,12 +108,14 @@
                 <div class="selects_left">
                     <div class="selects_left_title">Select date and package options</div>
                     <div class="selects_left_titles">
-                        Please select a visit date. The date you select is for reference
-                        only
+                        Please select a visit date. The date you select is for reference only
                     </div>
                     <!-- select选择器 -->
                     <el-select v-model="value" placeholder="Check Availability">
-                        <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
+                        <el-option v-for="item in options"
+                        :key="item.value" 
+                        :label="item.label" 
+                        :value="item.value">
                         </el-option>
                     </el-select>
                     <div class="Days">Duration (Days)</div>
@@ -568,6 +570,7 @@
                                 Captain Line transfers people to and from Universal Studios Japan and Osaka Aquarium
                             </div>
                         </div>
+                        
                     </div>
                 </div>
 
@@ -575,6 +578,7 @@
                 <div class="how_map">
                     <img src="../../assets/images/图层14.png" alt />
                 </div>
+
             </div>
 
             <!-- Common problem -->
@@ -589,8 +593,10 @@
                     <div class="common_problem">
                         <div class="common_nav">
                             <div class="common_title">Q 1:</div>
-                            <div class="common_text">Do I have to enter the park on the date I selected when make the
-                                booking?</div>
+                            <div class="common_text">
+                                Do I have to enter the park on the date I selected when make the
+                                booking?
+                            </div>
                         </div>
                         <div class="common_nav">
                             <div class="common_title">A 1:</div>
@@ -737,11 +743,11 @@
         color: #ffffff;
     }
 
-    /deep/ .el-breadcrumb {
+    /* /deep/ .el-breadcrumb {
         margin-top: 2.3125rem;
         margin-bottom: 1rem;
         margin-left: .625rem;
-    }
+    } */
 
     /* 按钮 */
     /deep/.el-button {
@@ -838,6 +844,7 @@
         font-family: SF Pro Text;
         font-weight: 300;
         color: rgba(51, 51, 51, 1);
+        margin-left: .625rem;
     }
 
     .main_Enjoy {

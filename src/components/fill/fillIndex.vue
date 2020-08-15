@@ -293,14 +293,14 @@
 <style lang="scss" scope>
     /* 主体 */
     .main_nav {
-        // border: 1px solid red;
+        /* border: 1px solid red; */
         background-color: #fff;
         /* width: 100%; */
         /* height: 100%; */
     }
 
     .fill_box {
-        // border: 1px solid red;
+        /* border: 1px solid red; */
         display: flex;
         margin-top: 2.5rem;
         margin-left: 1.1875rem;
