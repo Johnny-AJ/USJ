@@ -21,6 +21,7 @@
             <div class="main_Ticket">
                 <!-- 左 -->
                 <div class="main_left">
+                    <!-- <h1>Universal Studios Japan™ Ticket</h1> -->
                     <div class="main_title">Universal Studios Japan™ Ticket</div>
 
                     <div class="main_star">
@@ -112,10 +113,7 @@
                     </div>
                     <!-- select选择器 -->
                     <el-select v-model="value" placeholder="Check Availability">
-                        <el-option v-for="item in options"
-                        :key="item.value" 
-                        :label="item.label" 
-                        :value="item.value">
+                        <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
                         </el-option>
                     </el-select>
                     <div class="Days">Duration (Days)</div>
@@ -570,7 +568,7 @@
                                 Captain Line transfers people to and from Universal Studios Japan and Osaka Aquarium
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
 

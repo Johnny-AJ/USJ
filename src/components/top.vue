@@ -4,9 +4,12 @@
 
         <!-- 展示 -->
         <div class="top_top">
+
+            <!-- logo -->
             <div class="top_left">
                 <img src="@/assets/images/logo1.png" />
             </div>
+
             <div class="top_right">
                 <ul class="language_list">
                     <li>日本語</li>
@@ -16,6 +19,7 @@
                     <li>中文繁體字 香港</li>
                     <li>中文繁體字 台灣</li>
                 </ul>
+
                 <ul class="menu_list">
                     <li>Top</li>
                     <li>Access</li>
@@ -27,85 +31,71 @@
         </div>
 
         <!-- 导航栏 -->
-        <div class="top_navi">
+        <div class="top_navi sp_none">
             <div class="navi_img">
-                <a href="/">
+                <router-link to="/">
                     <img src="@/assets/images/header_menu_attractions_off.png" alt="游乐设施" title="游乐设施" />
-                </a>
+                </router-link>
             </div>
             <div class="navi_img">
-                <a href="/">
-                    <img src="@/assets/images/header_menu_park_guide_off.png" alt="游乐设施" title="游乐设施" />
-                </a>
+                <router-link to="/">
+                    <img src="@/assets/images/header_menu_park_guide_off.png" alt="服务指南" title="服务指南" />
+                </router-link>
             </div>
             <div class="navi_img">
-                <a href="/">
-                    <img src="@/assets/images/header_menu_restaurants_off.png" alt="游乐设施" title="游乐设施" />
-                </a>
+                <router-link to="/">
+                    <img src="@/assets/images/header_menu_restaurants_off.png" alt="餐厅" title="餐厅" />
+                </router-link>
             </div>
             <div class="navi_img">
-                <a href="/">
-                    <img src="@/assets/images/header_menu_shops_off.png" alt="游乐设施" title="游乐设施" />
-                </a>
+                <router-link to="/">
+                    <img src="@/assets/images/header_menu_shops_off.png" alt="商城" title="商城" />
+                </router-link>
             </div>
             <div class="navi_img">
-                <a href="/">
-                    <img src="@/assets/images/header_menu_tickets_off.png" alt="游乐设施" title="游乐设施" />
-                </a>
+                <router-link to="/">
+                    <img src="@/assets/images/header_menu_tickets_off.png" alt="门票" title="门票" />
+                </router-link>
             </div>
             <div class="navi_img">
-                <a href="/">
-                    <img src="@/assets/images/header_menu_hotels_off.png" alt="游乐设施" title="游乐设施" />
-                </a>
+                <router-link to="/">
+                    <img src="@/assets/images/header_menu_hotels_off.png" alt="酒店" title="酒店" />
+                </router-link>
             </div>
             <div class="navi_img">
-                <a href="/">
-                    <img src="@/assets/images/header_menu_travel_off.png" alt="游乐设施" title="游乐设施" />
-                </a>
+                <router-link to="/">
+                    <img src="@/assets/images/header_menu_travel_off.png" alt="机票" title="机票" />
+                </router-link>
             </div>
         </div>
-
     </div>
 </template>
 
 <script>
-    export default {};
+    export default {
+        name: "top",
+        data() {
+            return {};
+        },
+    };
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
     .top {
-        /* height: 200px;
-        border: 1px solid blue; */
-        /* background-image: url("assets/images/bg_main.png");
-        background-position: top center;
-        background-repeat: no-repeat;
-        position: relative; */
-        /* padding-bottom: 66px; */
+        padding-top: 30px;
     }
 
     .top_top {
         display: flex;
         justify-content: space-between;
-        padding-top: 30px;
     }
 
-    /* 左边 */
     .top_left img {
-        width: 400px;
-        height: 80px;
-        /* border: 1px solid red; */
         visibility: top;
-    }
-
-    /* 右边 */
-    .top_right {
-        /* border: 1px solid red; */
-        margin-left: 54px;
     }
 
     .language_list {
         display: flex;
-        align-items: center;
         width: 100%;
         margin-bottom: 0.625rem;
     }
@@ -125,7 +115,6 @@
 
     .menu_list {
         display: flex;
-        align-items: center;
         width: 100%;
         margin-left: 20px;
     }
@@ -146,29 +135,14 @@
 
     /* 导航栏 */
     .top_navi {
-        width: 100%;
-        /* border: 1px solid red; */
         display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: 10px;
-        /* margin-bottom: 15px */
     }
 
     .navi_img {
-        width: 170px;
-        height: 60px;
+        width: 100%;
         text-align: center;
         line-height: 60px;
         background: linear-gradient(0deg, rgba(11, 56, 131, 1), rgba(15, 75, 162, 1));
         border: 1px solid #0059aa;
-    }
-
-    .navi_img img {
-        visibility: top;
-    }
-
-    .navi_img a:hover {
-        background-color: blue;
     }
 </style>

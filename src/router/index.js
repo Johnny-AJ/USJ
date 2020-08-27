@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import homeIndex from '../components/home/homeIndex.vue'
-import orderIndex from '../components/order/orderIndex.vue'
-import successfulIndex from '../components/success/successfulIndex.vue'
-import fillIndex from '../components/fill/fillIndex.vue'
-import paymentIndex from '../components/payment/paymentIndex.vue'
+// import homeIndex from '../components/home/homeIndex.vue'
+// import orderIndex from '../components/order/orderIndex.vue'
+// import successfulIndex from '../components/success/successfulIndex.vue'
+// import fillIndex from '../components/fill/fillIndex.vue'
+// import paymentIndex from '../components/payment/paymentIndex.vue'
 
 Vue.use(VueRouter)
 
@@ -24,28 +24,36 @@ const routes = [
   // },
   {
     path: '/',  // 首页
-    name: 'homeIndex',
-    component: () => import('../views/home/home.vue')
-  },
-  {
-    path: '/orderIndex',  // 订单详情
-    name: 'orderIndex',
-    component: () => import('../views/order/order.vue')
-  },
-  {
-    path: '/successfulIndex',  // 订单成功  
-    name: 'successfulIndex',
-    component: () => import('../views/success/success.vue')
-  },
-  {
-    path: '/fillIndex',  // 填写信息
-    name: 'fillIndex',
-    component: () => import('../views/fill/fill.vue')
-  },
-  {
-    path: '/paymentIndex',  // 支付页
-    name: 'paymentIndex',
-    component: () => import('../views/payment/payment.vue')
+    name: 'home',
+    redirect: { name: 'home'},
+    component: () => import('@/layout/home.vue'),
+    children: [
+      {
+        path: '/home',  // 订单详情
+        name: 'home',
+        component: () => import('@/views/home/home.vue')
+      },
+      {
+        path: '/order',  // 订单详情
+        name: 'order',
+        component: () => import('@/views/order/order.vue')
+      },
+      {
+        path: '/success',  // 订单成功  
+        name: 'success',
+        component: () => import('@/views/success/success.vue')
+      },
+      {
+        path: '/fill',  // 填写信息
+        name: 'fill',
+        component: () => import('@/views/fill/fill.vue')
+      },
+      {
+        path: '/payment',  // 支付页
+        name: 'payment',
+        component: () => import('@/views/payment/payment.vue')
+      }
+    ]
   }
 ]
 
