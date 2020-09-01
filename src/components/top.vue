@@ -1,6 +1,6 @@
 <template>
     <!-- 顶部 -->
-    <div class="top globalWith">
+    <div class="globalWith">
 
         <!-- 展示 -->
         <div class="top_top">
@@ -28,6 +28,7 @@
                     <li>Rules & Manners</li>
                 </ul>
             </div>
+
         </div>
 
         <!-- 导航栏 -->
@@ -68,6 +69,22 @@
                 </router-link>
             </div>
         </div>
+
+        <!-- 更多 -->
+        <p class="bnm">
+            <a href="/">
+                <img src="https://www.usj.co.jp/cn/common/img/sp_img/sp_top_menu_bt.png" alt="">
+            </a>
+        </p>
+
+
+        <!-- 返回到顶部 -->
+        <div class="black_top">
+            <a href="/">
+                <img src="@/assets/images/top.png" alt="/">
+            </a>
+        </div>
+
     </div>
 </template>
 
@@ -82,12 +99,13 @@
 
 <style lang="scss" scoped>
     .top {
-        padding-top: 30px;
+        /* padding-top: 30px; */
     }
 
     .top_top {
         display: flex;
         justify-content: space-between;
+        padding-top: 30px;
     }
 
     .top_left img {
@@ -144,5 +162,68 @@
         line-height: 60px;
         background: linear-gradient(0deg, rgba(11, 56, 131, 1), rgba(15, 75, 162, 1));
         border: 1px solid #0059aa;
+    }
+
+    /* 更多 */
+    .bnm {
+        position: absolute;
+        top: -18px;
+        right: 0;
+        z-index: 9999;
+    }
+
+    p a img {
+        width: 66%;
+    }
+
+    /* 返回顶部 */
+    .black_top {
+        display: block;
+        position: fixed;
+        bottom: 50px;
+        right: 10px;
+        z-index: 99;
+    }
+
+    .black_top a img {
+        width: 50%;
+    }
+
+    /* 小于768 宽度100% */
+    @media screen and (max-width: 768px) {
+        .top_right {
+            display: none;
+        }
+
+        .top_right {
+            width: 768px;
+            border: 1px solid red;
+        }
+
+        .top_left img {
+            width: 100% !important;
+            margin: 0 0 0 10px;
+        }
+
+        .globalWith {
+            width: 100% !important;
+            /* width: 100%; */
+        }
+
+        /* 导航栏 */
+        .top_navi {
+            display: none;
+        }
+    }
+
+    /* 隐藏更多 */
+    @media screen and (min-width: 768px) {
+        .bnm {
+            display: none;
+        }
+
+        .black_top {
+            display: none;
+        }
     }
 </style>

@@ -5,6 +5,8 @@ body,
     margin: 0;
     padding: 0;
     background-color: #0073e3;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 ol,
@@ -41,6 +43,7 @@ dd {
     border-radius: .625rem;
     /* border: 1px solid gold; */
     margin-bottom: 30px;
+    position: relative;
 }
 
 

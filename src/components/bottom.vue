@@ -11,6 +11,7 @@
         <dl>
           <dt>
             <a href="/">〉游乐设施</a>
+            <!-- <el-button style="width: 160px;">〉游乐设施</el-button> -->
           </dt>
           <dt>
             <a href="/">〉门票</a>
@@ -164,7 +165,7 @@
     width: 100%;
     /* margin: 0 auto; */
     /* background-image: url("@/assets/images/bg_main1.png"); */
-    background-image: url("../assets/images/bg_main.png");
+    /* background-image: url("../assets/images/bg_main.png"); */
     background-position: top center;
     background-repeat: no-repeat;
     position: relative;
@@ -213,6 +214,12 @@
     color: #fff;
     font-size: 14px;
   }
+
+  dl dd a:hover {
+    color: blue;
+    list-style: none;
+  }
+
 
   /* 酒店 */
   .ItemBox_last dd {

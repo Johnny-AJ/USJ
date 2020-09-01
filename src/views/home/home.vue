@@ -14,15 +14,20 @@
 
         <!-- 主体内容 -->
         <div class="main_nav globalWith">
+
+            <!-- 01 -->
             <div class="main_img">
-                <img src="../../assets/images/pic.png" alt />
+                <img src="@/assets/images/pic.png" alt />
             </div>
 
+            <!-- 2 -->
             <div class="main_Ticket">
+
+
                 <!-- 左 -->
                 <div class="main_left">
                     <!-- <h1>Universal Studios Japan™ Ticket</h1> -->
-                    <div class="main_title">Universal Studios Japan™ Ticket</div>
+                    <h2 class="main_title">Universal Studios Japan™ Ticket</h2>
 
                     <div class="main_star">
                         <i class="el-icon-star-off"></i>
@@ -35,7 +40,7 @@
 
                     <div class="main_Tidak">
                         <div class="main_Tidak_box">
-                            <img src="@/assets/images/dayin.png" alt="/" />
+                            <img src="@/assets/images/shouhou.png" alt="/" />
                             <div class="main_end">Tidak Bisa Refund</div>
                         </div>
                         <div class="main_Tidak_box">
@@ -43,20 +48,22 @@
                             <div class="main_end">Show Mobile or Printed Voucher</div>
                         </div>
                         <div class="main_Tidak_box">
-                            <img src="@/assets/images/dayin.png" alt="/" />
+                            <img src="@/assets/images/riqi.png" alt="/" />
                             <div class="main_end">Open Date Ticket/ Fixed Date Ticket</div>
                         </div>
                         <div class="main_Tidak_box">
-                            <img src="@/assets/images/dayin.png" alt="/" />
+                            <img src="@/assets/images/youhuiquan.png" alt="/" />
                             <div class="main_end">Collect Physical Ticket/Enter Directly With Voucher</div>
                         </div>
                     </div>
 
                     <div class="main_Enjoy">
+                        <!-- <table> -->
                         <dl>
                             <dd>● Enjoy direct entry to Universal Studios Japan™’s 60+ attrac</dd>
                             <dd>
-                                ● Experience the thrill of the world’s # 1 ride for 5 consecutive years: The Wizarding
+                                ● Experience the thrill of the world’s # 1 ride for 5 consecutive years: The
+                                Wizarding
                                 World of Harry Potter
                             </dd>
                             <dd>
@@ -66,10 +73,12 @@
                             </dd>
                             <dd>
                                 ●
-                                Add an Express Pass 3, 4, or 7 to your USJ ticket and skip the lines to your favorite
+                                Add an Express Pass 3, 4, or 7 to your USJ ticket and skip the lines to your
+                                favorite
                                 rides
                             </dd>
                         </dl>
+                        <!-- </table> -->
                     </div>
                 </div>
 
@@ -84,7 +93,7 @@
                             <div class="right_Instant">Instant Confirmation</div>
                         </div>
                         <div class="right_Today">
-                            <img src="@/assets/images/riqi.png" alt="/" />
+                            <img src="@/assets/images/日期.png" alt="/" />
                             <div class="right_Instant">Available Today</div>
                         </div>
                         <div class="right_btn">
@@ -99,11 +108,13 @@
                 </div>
             </div>
 
+            <!-- 3 -->
             <!-- Package Options -->
             <div class="Package">
                 <div class="Options">Package Options</div>
             </div>
 
+            <!-- 4 -->
             <div class="selects">
                 <!-- 左 -->
                 <div class="selects_left">
@@ -128,15 +139,15 @@
                     <div class="Days">Schedule</div>
                     <div class="plain_box">
                         <div>
-                            <el-button plain style="width: 20.625rem;">Ticket - A Low Season (JPY7,600-7,800)
+                            <el-button plain class="plain_box_input">Ticket - A Low Season (JPY7,600-7,800)
                             </el-button>
-                            <el-button plain>Ticket - C Regular-High Season (JPY6,900)
+                            <el-button plain class="plain_box_input">Ticket - C Regular-High Season (JPY6,900)
                             </el-button>
                         </div>
                         <div>
-                            <el-button plain style="width: 20.625rem;">Ticket - C Regular-High Season (JPY8,900)
+                            <el-button plain class="plain_box_input">Ticket - C Regular-High Season (JPY8,900)
                             </el-button>
-                            <el-button plain>Ticket - C Regular-High Season (JPY7,900)
+                            <el-button plain class="plain_box_input">Ticket - C Regular-High Season (JPY7,900)
                             </el-button>
                         </div>
                     </div>
@@ -169,8 +180,10 @@
                     <div class="step">
                         <div class="step_title">Complete all required fields to proceed to the next step</div>
                         <div class="addtocart">
-                            <div class="add">ADDTOCART</div>
-                            <div class="book">BOOKNOW</div>
+                            <!-- <div class="add">ADDTOCART</div> -->
+                            <el-button class="add">ADDTOCART</el-button>
+                            <!-- <div class="book">BOOKNOW</div> -->
+                            <el-button class="book">BOOKNOW</el-button>
                         </div>
                     </div>
                 </div>
@@ -179,23 +192,23 @@
                     <div class="riselects_rightgh_title">Selected Package Details</div>
 
                     <div class="selects_nav">
-                        <img src="../../assets/images/图层11.png" alt="/" />
+                        <img src="@/assets/images/图层11.png" alt="/" />
                         <div class="nav_instant">Instant Confirmation</div>
                     </div>
                     <div class="selects_nav">
-                        <img src="../../assets/images/shouhou.png" alt="/" />
+                        <img src="@/assets/images/shouhou.png" alt="/" />
                         <div class="nav_instant">No Cancellation</div>
                     </div>
                     <div class="selects_nav">
-                        <img src="../../assets/images/dayin.png" alt="/" />
+                        <img src="@/assets/images/打印.png" alt="/" />
                         <div class="nav_instant">Show Mobile or Printed Voucher</div>
                     </div>
                     <div class="selects_nav">
-                        <img src="../../assets/images/riqi1.png" alt="/" />
+                        <img src="@/assets/images/日期.png" alt="/" />
                         <div class="nav_instant">Open Date Ticket</div>
                     </div>
                     <div class="selects_nav">
-                        <img src="../../assets/images/riqi拷贝.png" alt="/" />
+                        <img src="@/assets/images/优惠券 (1).png" alt="/" />
                         <div class="nav_instant">Enter Directly With Voucher</div>
                     </div>
 
@@ -255,24 +268,28 @@
                 </div>
             </div>
 
+            <!-- 5 -->
             <div class="Package Related">
                 <div class="Options">Related Activities</div>
             </div>
 
+            <!-- 6 -->
             <!-- 轮播图 -->
             <div class="swiper">123</div>
 
+            <!-- 7 -->
             <div class="Package Related">
                 <div class="Options">Most Recent Review</div>
             </div>
 
+            <!-- 8 -->
             <!-- sunnay -->
             <div class="sunnay">
                 <div class="sunnay_box">
                     <div class="sunnay_nav">
                         <!-- 头像 -->
                         <div class="Avatar">
-                            <img src="../../assets/images/组39.png" alt />
+                            <img src="@/assets/images/组39.png" alt />
                         </div>
                         <div>
                             <div class="sunnay_title_nav">
@@ -288,10 +305,12 @@
                 </div>
             </div>
 
+            <!-- 9 -->
             <div class="Package Related">
                 <div class="Options">What To Expect</div>
             </div>
 
+            <!-- 10 -->
             <div class="welcome">
                 Welcome to the incredible world of Universal Studios Japan in Osaka! With a Universal Studios Japan
                 ticket from Klook, you can recreate dramatic scenes from your favorite blockbusters – at one of only two
@@ -301,10 +320,11 @@
                 Harry Potter. This adventure park is sure to indulge the thrill-seeker and movie buff's every fantasy!
             </div>
 
+            <!-- 11 -->
             <div class="figure_box">
                 <!-- 游玩图 -->
                 <div class="figure">
-                    <img src="../../assets/images/组40.png" alt />
+                    <img src="@/assets/images/组40.png" alt />
                 </div>
 
                 <!-- 内容 -->
@@ -312,10 +332,11 @@
                 </div>
             </div>
 
+            <!-- 12 -->
             <div class="figure_box">
                 <!-- 游玩图 -->
                 <div class="figure">
-                    <img src="../../assets/images/组41.png" alt />
+                    <img src="@/assets/images/组41.png" alt />
                 </div>
 
                 <!-- 内容 -->
@@ -323,6 +344,7 @@
                 </div>
             </div>
 
+            <!-- 13 -->
             <!-- booking -->
             <div class="booking_box">
                 <div class="Package Options_booking">
@@ -426,8 +448,8 @@
                 </div>
             </div>
 
+            <!-- 14 -->
             <!-- How To Use -->
-
             <div class="how_box">
                 <div class="Package how_use">
                     <div class="Options">How To Use</div>
@@ -574,11 +596,12 @@
 
                 <!-- 地图 -->
                 <div class="how_map">
-                    <img src="../../assets/images/图层14.png" alt />
+                    <img src="@/assets/images/图层14.png" alt />
                 </div>
 
             </div>
 
+            <!-- 15 -->
             <!-- Common problem -->
             <div class="common_big_box">
                 <div class="Common_box">
@@ -676,7 +699,10 @@
                     </div>
                 </div>
             </div>
+
         </div>
+
+
     </div>
 </template>
 
@@ -751,6 +777,15 @@
         margin-top: 5px;
         margin-left: 10px;
     }
+
+    /* 计算器 */
+    /deep/ .el-input-number {
+        /* margin-right: 60px; */
+    }
+
+    /deep/ .el-input-number .el-input__inner {
+        /* padding-left: 80px; */
+    }
 </style>
 
 <style lang="scss" scoped>
@@ -767,8 +802,8 @@
     .main_img {
         text-align: center;
         /* margin-top: 0.625rem; */
-        margin-bottom: 2.8125rem;
-        padding-top: .625rem;
+        margin-bottom: 10px;
+        padding-top: 15px;
     }
 
     .main_img img {
@@ -1081,28 +1116,28 @@
 
     .add {
         background-color: #ffa014;
-        width: 7rem;
-        height: 1.9rem;
+        /* width: 7rem; */
+        /* height: 1.9rem; */
         border-radius: 6px;
         text-align: center;
         font-family: SF Pro Display;
         font-weight: 500;
         color: rgba(255, 255, 255, 1);
-        line-height: 30px;
+        /* line-height: 30px; */
         margin-right: 20px;
     }
 
     .book {
         background-color: #ff4800;
         border-radius: 6px;
-        width: 7rem;
-        height: 1.9rem;
+        /* width: 7rem; */
+        /* height: 1.9rem; */
         border-radius: 6px;
         text-align: center;
         font-family: SF Pro Display;
         font-weight: 500;
         color: rgba(255, 255, 255, 1);
-        line-height: 30px;
+        /* line-height: 30px; */
     }
 
     .quantity {
@@ -1475,5 +1510,241 @@
         font-family: SF Pro Text;
         font-weight: 500;
         font-size: .875rem;
+    }
+
+    /* 小于768 宽度100% */
+    @media screen and (max-width: 768px) {
+        .top_right {
+            display: none;
+        }
+
+        .top_right {
+            width: 768px;
+            border: 1px solid red;
+        }
+
+        .top_left img {
+            width: 100% !important;
+            margin: 0 0 0 10px;
+        }
+
+        .globalWith {
+            width: 100% !important;
+            /* width: 100%; */
+        }
+
+        /* 2 */
+        .main_img img {
+            width: 97%;
+        }
+
+        .main_Ticket {
+            flex-wrap: wrap;
+        }
+
+        .main_nav {
+            width: 100%;
+        }
+
+        .main_title {
+            font-size: 40px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main_end {
+            font-size: 14px;
+        }
+
+        .main_left {
+            width: 100%;
+        }
+
+        .main_rights {
+            width: 97%;
+            margin-top: 20px;
+        }
+
+        .right_Get {
+            line-height: 35px;
+        }
+
+        .plain_box_input {
+            width: 350px;
+        }
+
+        /* 3 */
+        .Package {
+            width: 100%;
+        }
+
+        /* 4 */
+        .selects {
+            flex-wrap: wrap;
+        }
+
+        .selects_left {
+            width: 100%;
+        }
+
+        .Adult {
+            width: 97%;
+        }
+
+        .step {
+            flex-wrap: wrap;
+        }
+
+        .addtocart {
+            margin-top: 10px;
+        }
+
+        .selects_right {
+            width: 97%;
+            margin-top: 10px;
+        }
+
+        .package_right {
+            margin-top: 20px;
+        }
+
+        .selects_left_titles {
+            font-size: 14px;
+        }
+
+        .selects_nav img {
+            width: 5%;
+            height: 1%;
+        }
+
+        .Description {
+            margin-left: 10px;
+        }
+
+        /* 8 */
+        .sunnay_box {
+            width: 97%;
+        }
+
+        .Nov {
+            top: 6px;
+            right: 10px;
+        }
+
+        /* 10 */
+        .welcome {
+            width: 93%;
+            font-size: 14px;
+        }
+
+        .figure img {
+            width: 100%;
+        }
+
+        .Osaka {
+            font-size: 14px;
+        }
+
+        /* 13 */
+        .booking_box {
+            width: 92%;
+        }
+
+        /* 14 */
+        .how_box {
+            width: 92%;
+        }
+
+        /* 15 */
+        .common_big_box {
+            width: 90%;
+        }
+
+        .common_title {
+            width: 6%;
+        }
+
+        /* 面包屑 */
+        .mains_breadcrumb {
+            display: none;
+        }
+
+        .right_btn {
+            width: 50%;
+        }
+    }
+
+    /* 小于475 宽度100% */
+    @media screen and (max-width: 475px) {
+        .main_title {
+            font-size: 20px;
+        }
+
+        .selects_left_title {
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .quantity {
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        .Adult {
+            width: 93%;
+        }
+
+        .Adult_box {
+            width: 70%;
+        }
+
+        .Avatar {
+            margin-right: 6px;
+        }
+
+        .sunnay_title {
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .Nov {
+            top: 4px;
+            right: 8px;
+        }
+
+        .welcome {
+            margin-left: 10px;
+        }
+
+        .figure_box {
+            margin-left: 10px;
+        }
+
+        .common_title {
+            width: 13%;
+        }
+
+        .booking_box {
+            margin-left: 10px;
+        }
+
+        .main_img img {
+            width: 95%;
+        }
+
+        .plain_box_input {
+            width: 300px;
+        }
+
+        .right_btn {
+            width: 66%;
+        }
+    }
+
+    /* 隐藏更多 */
+    @media screen and (min-width: 768px) {
+        common_titlebnm {
+            display: none;
+        }
     }
 </style>
