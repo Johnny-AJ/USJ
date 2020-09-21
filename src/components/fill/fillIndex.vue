@@ -293,14 +293,10 @@
 <style lang="scss" scope>
     /* 主体 */
     .main_nav {
-        /* border: 1px solid red; */
         background-color: #fff;
-        /* width: 100%; */
-        /* height: 100%; */
     }
 
     .fill_box {
-        /* border: 1px solid red; */
         display: flex;
         margin-top: 2.5rem;
         margin-left: 1.1875rem;
@@ -313,7 +309,6 @@
     .fill_left {
         width: 70%;
         border: 1px solid blue;
-        /* margin-right: 1.75rem; */
         background: rgba(255, 255, 255, 1);
         border: 1px solid rgba(235, 235, 235, 1);
         box-shadow: 0px 2px 7px 1px rgba(51, 51, 51, 0.1);
@@ -383,7 +378,6 @@
     /* fill_right */
     .fill_right {
         width: 30%;
-        // border: 1px solid gold;
         margin-right: 1.375rem;
     }
 
@@ -396,7 +390,7 @@
     }
 
     .right_bb {
-        border-bottom: 0.125rem solid #ffcccccc;
+        border-bottom: 0.125rem solid #eee;
         margin-bottom: 1.5rem;
     }
 
@@ -448,7 +442,7 @@
     }
 
     .right_b {
-        border: 1px solid goldenrod;
+        border: 1px solid #eee;
         background: rgba(255, 255, 255, 1);
         border: 1px solid rgba(235, 235, 235, 1);
         box-shadow: 0px 2px 7px 1px rgba(51, 51, 51, 0.1);
@@ -498,17 +492,16 @@
         align-items: center;
         justify-content: space-around;
         line-height: 50px;
-        border-top: 0.125rem solid #ffcccccc;
+        border-top: 0.125rem solid #@enter="";
     }
 
     /* ② Payment Type */
     .Payment {
         width: 66%;
-        /* border: 1px solid red; */
         margin-left: 1.1875rem;
         margin-bottom: 1.25rem;
         background: rgba(255, 255, 255, 1);
-        border: 1px solid rgba(235, 235, 235, 1);
+        border: 1px solid #eee;
         box-shadow: 0px 2px 7px 1px rgba(51, 51, 51, 0.1);
     }
 

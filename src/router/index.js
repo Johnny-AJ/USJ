@@ -25,7 +25,7 @@ const routes = [
   {
     path: '/',  // 首页
     name: 'home',
-    redirect: { name: 'home'},
+    redirect: { name: 'home' },
     component: () => import('@/layout/home.vue'),
     children: [
       {
@@ -52,6 +52,11 @@ const routes = [
         path: '/payment',  // 支付页
         name: 'payment',
         component: () => import('@/views/payment/payment.vue')
+      },
+      {
+        path: '/ticket',  // 票类型
+        name: 'ticket',
+        component: () => import('@/views/ticket/ticket.vue')
       }
     ]
   }

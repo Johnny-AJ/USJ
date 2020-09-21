@@ -1,58 +1,59 @@
 html,
 body,
 #app {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #0073e3;
-    overflow-y: auto;
-    overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0073e3;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 ol,
 ul {
-    padding: 0;
-    margin: 0;
-    list-style: none
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 /*清除浮动*/
 .clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 dd {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /* 版心宽度 */
 .globalWith {
-    width: 62.5rem;
-    /* width: 1000px; */
-    height: 100%;
-    margin: 0 auto;
-    border-radius: .625rem;
-    /* border: 1px solid gold; */
-    margin-bottom: 30px;
-    position: relative;
+  width: 62.5rem;
+  /* width: 1000px; */
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 0.625rem;
+  margin-bottom: 30px;
+  position: relative;
 }
 
-
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 table,
 td,
 th {
-    border: 1px solid blue;
+  border: 1px solid #eee;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
