@@ -1,5 +1,5 @@
 <template>
-  <div class="ticket globalWith">
+  <div class="ticket">
 
     <!-- tickets -->
     <div class="tickeys_box">
@@ -14,7 +14,7 @@
           </div>
           <div class="ticket_left">
             <div class="title_nav">{{item.ticket_title}}</div>
-            <div class="type">Type {{item.ticket_type}}</div>
+            <div class="type">Type：{{item.ticket_type}}</div>
             <div class="ticket_price">
               <div class="priceq">${{item.ticket_price}}</div>
               <div class="ordernow">
@@ -41,7 +41,7 @@
           </div>
           <div class="ticket_left">
             <div class="title_nav">{{item.ticket_title}}</div>
-            <div class="type">Type {{item.ticket_type}}</div>
+            <div class="type">Type：{{item.ticket_type}}</div>
             <div class="ticket_price">
               <div class="priceq">${{item.ticket_price}}</div>
               <div class="ordernow">
@@ -190,7 +190,9 @@ export default {
 
 <style lang="scss" scoped>
 .ticket {
-  margin-top: 30px;
+  background-color: #eee;
+  padding-top: 30px;
+  padding-bottom: 3px;
 }
 
 // tickeys_box

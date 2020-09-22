@@ -1,8 +1,8 @@
 <template>
-<div class="mains">
+  <div class="mains">
 
-  <!-- 面包屑 -->
-  <!--    <div class="mains_breadcrumb globalWith">
+    <!-- 面包屑 -->
+    <!--    <div class="mains_breadcrumb globalWith">
             <el-breadcrumb separator-class="el-icon-arrow-right">
                 <el-breadcrumb-item>Home</el-breadcrumb-item>
                 <el-breadcrumb-item>JAPAN</el-breadcrumb-item>
@@ -12,720 +12,720 @@
             </el-breadcrumb>
         </div> -->
 
-  <!-- 主体内容 -->
-  <div class="main_nav globalWith">
+    <!-- 主体内容 -->
+    <div class="main_nav globalWith">
 
-    <!-- 01 -->
-    <div class="main_img">
-      <img src="@/assets/images/pic.png" alt />
-    </div>
-
-    <!-- 2 -->
-    <div class="main_Ticket">
-
-      <!-- 左 -->
-      <div class="main_left">
-        <!-- <h1>Universal Studios Japan™ Ticket</h1> -->
-        <h2 class="main_title">Universal Studios Japan™ Ticket</h2>
-
-        <div class="main_star">
-          <i class="el-icon-star-off"></i>
-          <div class="main_score">
-            <div class="main_god">4.7</div>
-            <div class="main_blue">(16.254 reviews)</div>
-            <div class="main_booked">2M+ Booked</div>
-          </div>
-        </div>
-
-        <div class="main_Tidak">
-          <div class="main_Tidak_box">
-            <img src="@/assets/images/shouhou.png" alt="/" />
-            <div class="main_end">Tidak Bisa Refund</div>
-          </div>
-          <div class="main_Tidak_box">
-            <img src="@/assets/images/dayin.png" alt="/" />
-            <div class="main_end">Show Mobile or Printed Voucher</div>
-          </div>
-          <div class="main_Tidak_box">
-            <img src="@/assets/images/riqi.png" alt="/" />
-            <div class="main_end">Open Date Ticket/ Fixed Date Ticket</div>
-          </div>
-          <div class="main_Tidak_box">
-            <img src="@/assets/images/youhuiquan.png" alt="/" />
-            <div class="main_end">Collect Physical Ticket/Enter Directly With Voucher</div>
-          </div>
-        </div>
-
-        <div class="main_Enjoy">
-          <!-- <table> -->
-          <dl>
-            <dd>● Enjoy direct entry to Universal Studios Japan™’s 60+ attrac</dd>
-            <dd>
-              ● Experience the thrill of the world’s # 1 ride for 5 consecutive years: The
-              Wizarding
-              World of Harry Potter
-            </dd>
-            <dd>
-              ●
-              Make sure to catch shows, such as the Universal Spectacle Night Parade, where 100+
-              characters and floats take
-            </dd>
-            <dd>
-              ●
-              Add an Express Pass 3, 4, or 7 to your USJ ticket and skip the lines to your
-              favorite
-              rides
-            </dd>
-          </dl>
-          <!-- </table> -->
-        </div>
+      <!-- 01 -->
+      <div class="main_img">
+        <img src="@/assets/images/pic.png" alt />
       </div>
 
-      <!-- 右 -->
-      <div class="main_rights">
-        <!-- 价格部分 -->
-        <div class="main_right">
-          <div class="colors"></div>
-          <div class="right_price">¥ 488</div>
-          <div class="right_Today">
-            <img src="@/assets/images/图层11.png" alt="/" />
-            <div class="right_Instant">Instant Confirmation</div>
-          </div>
-          <div class="right_Today">
-            <img src="@/assets/images/日期.png" alt="/" />
-            <div class="right_Instant">Available Today</div>
-          </div>
-          <div class="right_btn">
-            <img src="@/assets/images/图层11拷贝.png" alt="/" />
-            <div class="right_Options">Select Options</div>
-          </div>
-          <div class="right_Get">
-            <div class="right_let">Get free credits when you complete an experience</div>
-            <div class="right_right">〉</div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <!-- 2 -->
+      <div class="main_Ticket">
 
-    <!-- 3 -->
-    <!-- Package Options -->
-    <div class="Package">
-      <div class="Options">Package Options</div>
-    </div>
+        <!-- 左 -->
+        <div class="main_left">
+          <!-- <h1>Universal Studios Japan™ Ticket</h1> -->
+          <h2 class="main_title">Universal Studios Japan™ Ticket</h2>
 
-    <!-- 4 -->
-    <div class="selects">
-      <!-- 左 -->
-      <div class="selects_left">
-        <div class="selects_left_title">Select date and package options</div>
-        <div class="selects_left_titles">
-          Please select a visit date. The date you select is for reference only
-        </div>
-        <!-- select选择器 -->
-        <el-select v-model="value" placeholder="Check Availability">
-          <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
-          </el-option>
-        </el-select>
-        <div class="Days">Duration (Days)</div>
-        <el-tooltip class="item" effect="light" content="Complete the selection below to view full package details" placement="top-start">
-          <el-button>1 Day</el-button>
-        </el-tooltip>
-        <el-tooltip class="item" effect="light" content="Complete the selection below to view full package details" placement="top-start">
-          <el-button>2 Day</el-button>
-        </el-tooltip>
-        <div class="Days">Schedule</div>
-        <div class="plain_box">
-          <div>
-            <el-button plain class="plain_box_input">Ticket - A Low Season (JPY7,600-7,800)
-            </el-button>
-            <el-button plain class="plain_box_input">Ticket - C Regular-High Season (JPY6,900)
-            </el-button>
+          <div class="main_star">
+            <i class="el-icon-star-off"></i>
+            <div class="main_score">
+              <div class="main_god">4.7</div>
+              <div class="main_blue">(16.254 reviews)</div>
+              <div class="main_booked">2M+ Booked</div>
+            </div>
           </div>
-          <div>
-            <el-button plain class="plain_box_input">Ticket - C Regular-High Season (JPY8,900)
-            </el-button>
-            <el-button plain class="plain_box_input">Ticket - C Regular-High Season (JPY7,900)
-            </el-button>
+
+          <div class="main_Tidak">
+            <div class="main_Tidak_box">
+              <img src="@/assets/images/shouhou.png" alt="/" />
+              <div class="main_end">Tidak Bisa Refund</div>
+            </div>
+            <div class="main_Tidak_box">
+              <img src="@/assets/images/dayin.png" alt="/" />
+              <div class="main_end">Show Mobile or Printed Voucher</div>
+            </div>
+            <div class="main_Tidak_box">
+              <img src="@/assets/images/riqi.png" alt="/" />
+              <div class="main_end">Open Date Ticket/ Fixed Date Ticket</div>
+            </div>
+            <div class="main_Tidak_box">
+              <img src="@/assets/images/youhuiquan.png" alt="/" />
+              <div class="main_end">Collect Physical Ticket/Enter Directly With Voucher</div>
+            </div>
           </div>
-        </div>
-        <div class="Days">Date</div>
-        <el-select v-model="value" placeholder="Please Select" class="class-based">
-          <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
-          </el-option>
-        </el-select>
-        <div class="quantity">
-          <div>Quantity</div>
-          <div>You must select no more than 40 for this package</div>
-        </div>
-        <div class="Adult">
-          <div class="Adult_titel">Adult</div>
-          <div class="Adult_box">
-            <div class="Adult_price">$286</div>
-            <div class="Adult_prices">$175</div>
-            <el-input-number v-model="num" @change="handleChange" :min="1" :max="10"></el-input-number>
-          </div>
-        </div>
-        <div class="Adult">
-          <div class="Adult_titel">Children</div>
-          <div class="Adult_box">
-            <div class="Adult_price">$286</div>
-            <div class="Adult_prices">$175</div>
-            <el-input-number v-model="num" @change="handleChange" :min="1" :max="10"></el-input-number>
+
+          <div class="main_Enjoy">
+            <!-- <table> -->
+            <dl>
+              <dd>● Enjoy direct entry to Universal Studios Japan™’s 60+ attrac</dd>
+              <dd>
+                ● Experience the thrill of the world’s # 1 ride for 5 consecutive years: The
+                Wizarding
+                World of Harry Potter
+              </dd>
+              <dd>
+                ●
+                Make sure to catch shows, such as the Universal Spectacle Night Parade, where 100+
+                characters and floats take
+              </dd>
+              <dd>
+                ●
+                Add an Express Pass 3, 4, or 7 to your USJ ticket and skip the lines to your
+                favorite
+                rides
+              </dd>
+            </dl>
+            <!-- </table> -->
           </div>
         </div>
 
-        <div class="step">
-          <div class="step_title">Complete all required fields to proceed to the next step</div>
-          <div class="addtocart">
-            <!-- <div class="add">ADDTOCART</div> -->
-            <el-button class="add">ADDTOCART</el-button>
-            <!-- <div class="book">BOOKNOW</div> -->
-            <el-button class="book">BOOKNOW</el-button>
-          </div>
-        </div>
-      </div>
-      <!-- 右 -->
-      <div class="selects_right">
-        <div class="riselects_rightgh_title">Selected Package Details</div>
-
-        <div class="selects_nav">
-          <img src="@/assets/images/图层11.png" alt="/" />
-          <div class="nav_instant">Instant Confirmation</div>
-        </div>
-        <div class="selects_nav">
-          <img src="@/assets/images/shouhou.png" alt="/" />
-          <div class="nav_instant">No Cancellation</div>
-        </div>
-        <div class="selects_nav">
-          <img src="@/assets/images/打印.png" alt="/" />
-          <div class="nav_instant">Show Mobile or Printed Voucher</div>
-        </div>
-        <div class="selects_nav">
-          <img src="@/assets/images/日期.png" alt="/" />
-          <div class="nav_instant">Open Date Ticket</div>
-        </div>
-        <div class="selects_nav">
-          <img src="@/assets/images/优惠券 (1).png" alt="/" />
-          <div class="nav_instant">Enter Directly With Voucher</div>
-        </div>
-
-        <div class="package_right">
-          <!-- Package_nav -->
-          <div class="Package_nav">
-            <div class="Description">Package Description</div>
-          </div>
-          <!-- nav -->
-          <div class="select_textarea">
-            <div>●</div>
-            <div class="textarea_nav">
-              For schedule and pricing information, please check the dates in green on the official
-              website’s calendar. Vouchers will be valid for 6 months from the chosen participation
-              date
-              with the same price tier
+        <!-- 右 -->
+        <div class="main_rights">
+          <!-- 价格部分 -->
+          <div class="main_right">
+            <div class="colors"></div>
+            <div class="right_price">¥ 488</div>
+            <div class="right_Today">
+              <img src="@/assets/images/图层11.png" alt="/" />
+              <div class="right_Instant">Instant Confirmation</div>
+            </div>
+            <div class="right_Today">
+              <img src="@/assets/images/日期.png" alt="/" />
+              <div class="right_Instant">Available Today</div>
+            </div>
+            <div class="right_btn">
+              <img src="@/assets/images/图层11拷贝.png" alt="/" />
+              <div class="right_Options">Select Options</div>
+            </div>
+            <div class="right_Get">
+              <div class="right_let">Get free credits when you complete an experience</div>
+              <div class="right_right">〉</div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="package_right">
-          <!-- Package_nav -->
-          <div class="Package_nav">
-            <div class="Description">Terms & Conditions</div>
+      <!-- 3 -->
+      <!-- Package Options -->
+      <div class="Package">
+        <div class="Options">Package Options</div>
+      </div>
+
+      <!-- 4 -->
+      <div class="selects">
+        <!-- 左 -->
+        <div class="selects_left">
+          <div class="selects_left_title">Select date and package options</div>
+          <div class="selects_left_titles">
+            Please select a visit date. The date you select is for reference only
           </div>
-          <!-- nav -->
-          <div class="select_textarea">
-            <div>●</div>
-            <div class="textarea_nav">
+          <!-- select选择器 -->
+          <el-select v-model="value" placeholder="Check Availability">
+            <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
+            </el-option>
+          </el-select>
+          <div class="Days">Duration (Days)</div>
+          <el-tooltip class="item" effect="light" content="Complete the selection below to view full package details" placement="top-start">
+            <el-button>1 Day</el-button>
+          </el-tooltip>
+          <el-tooltip class="item" effect="light" content="Complete the selection below to view full package details" placement="top-start">
+            <el-button>2 Day</el-button>
+          </el-tooltip>
+          <div class="Days">Schedule</div>
+          <div class="plain_box">
+            <div>
+              <el-button plain class="plain_box_input">Ticket - A Low Season (JPY7,600-7,800)
+              </el-button>
+              <el-button plain class="plain_box_input">Ticket - C Regular-High Season (JPY6,900)
+              </el-button>
+            </div>
+            <div>
+              <el-button plain class="plain_box_input">Ticket - C Regular-High Season (JPY8,900)
+              </el-button>
+              <el-button plain class="plain_box_input">Ticket - C Regular-High Season (JPY7,900)
+              </el-button>
+            </div>
+          </div>
+          <div class="Days">Date</div>
+          <el-select v-model="value" placeholder="Please Select" class="class-based">
+            <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
+            </el-option>
+          </el-select>
+          <div class="quantity">
+            <div>Quantity</div>
+            <div>You must select no more than 40 for this package</div>
+          </div>
+          <div class="Adult">
+            <div class="Adult_titel">Adult</div>
+            <div class="Adult_box">
+              <div class="Adult_price">$286</div>
+              <div class="Adult_prices">$175</div>
+              <el-input-number v-model="num" @change="handleChange" :min="1" :max="10"></el-input-number>
+            </div>
+          </div>
+          <div class="Adult">
+            <div class="Adult_titel">Children</div>
+            <div class="Adult_box">
+              <div class="Adult_price">$286</div>
+              <div class="Adult_prices">$175</div>
+              <el-input-number v-model="num" @change="handleChange" :min="1" :max="10"></el-input-number>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step_title">Complete all required fields to proceed to the next step</div>
+            <div class="addtocart">
+              <!-- <div class="add">ADDTOCART</div> -->
+              <el-button class="add">ADDTOCART</el-button>
+              <!-- <div class="book">BOOKNOW</div> -->
+              <el-button class="book">BOOKNOW</el-button>
+            </div>
+          </div>
+        </div>
+        <!-- 右 -->
+        <div class="selects_right">
+          <div class="riselects_rightgh_title">Selected Package Details</div>
+
+          <div class="selects_nav">
+            <img src="@/assets/images/图层11.png" alt="/" />
+            <div class="nav_instant">Instant Confirmation</div>
+          </div>
+          <div class="selects_nav">
+            <img src="@/assets/images/shouhou.png" alt="/" />
+            <div class="nav_instant">No Cancellation</div>
+          </div>
+          <div class="selects_nav">
+            <img src="@/assets/images/打印.png" alt="/" />
+            <div class="nav_instant">Show Mobile or Printed Voucher</div>
+          </div>
+          <div class="selects_nav">
+            <img src="@/assets/images/日期.png" alt="/" />
+            <div class="nav_instant">Open Date Ticket</div>
+          </div>
+          <div class="selects_nav">
+            <img src="@/assets/images/优惠券 (1).png" alt="/" />
+            <div class="nav_instant">Enter Directly With Voucher</div>
+          </div>
+
+          <div class="package_right">
+            <!-- Package_nav -->
+            <div class="Package_nav">
+              <div class="Description">Package Description</div>
+            </div>
+            <!-- nav -->
+            <div class="select_textarea">
+              <div>●</div>
+              <div class="textarea_nav">
+                For schedule and pricing information, please check the dates in green on the official
+                website’s calendar. Vouchers will be valid for 6 months from the chosen participation
+                date
+                with the same price tier
+              </div>
+            </div>
+          </div>
+
+          <div class="package_right">
+            <!-- Package_nav -->
+            <div class="Package_nav">
+              <div class="Description">Terms & Conditions</div>
+            </div>
+            <!-- nav -->
+            <div class="select_textarea">
+              <div>●</div>
+              <div class="textarea_nav">
+                In the event that you do not receive an email from us, please check your Spam folder or
+                notify us via email
+              </div>
+            </div>
+            <div class="select_textarea">
+              <div>●</div>
+              <div class="textarea_nav">You can present either a printed or a mobile voucher for this
+                activity</div>
+            </div>
+          </div>
+
+          <div class="package_right">
+            <!-- Package_nav -->
+            <div class="Package_nav">
+              <div class="Description">How To Use</div>
+            </div>
+            <!-- nav -->
+            <div class="select_textarea">
+              <div>●</div>
+              <div class="textarea_nav">You can present either a printed or a mobile voucher for this
+                activity</div>
+            </div>
+            <div class="select_textarea">
+              <div>●</div>
+              <div class="textarea_nav">You can enter the attraction directly with this voucher</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="Package Related">
+        <div class="Options">Related Activities</div>
+      </div>
+
+      <!-- 6 -->
+      <!-- 轮播图 -->
+      <div class="swiper">
+        <el-carousel type="card">
+          <el-carousel-item v-for="item in 6" :key="item">
+            <!-- <h3 class="medium">{{ item }}</h3> -->
+            <div class="swiper_box">
+              <div class="stat_left">
+                <img src="@/assets/images/组47.png" alt="/">
+              </div>
+              <div class="stat_right">
+                <div class="swiper_title">Universal Studios Japan™ 1 Day Pass and Express Pass 4 with
+                  JPY5,000 Shopping...</div>
+                <div class="stat_box">
+                  <div class="stat">☆</div>
+                  <div class="stat_num">4.7</div>
+                  <div class="num_num">(16,254 reviews)</div>
+                </div>
+                <div class="num_box">
+                  <div class="num_price">¥ 726</div>
+                  <div>
+                    <img src="@/assets/images/图层11.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </el-carousel-item>
+        </el-carousel>
+      </div>
+
+      <!-- 7 -->
+      <div class="Package Related">
+        <div class="Options">Most Recent Review</div>
+      </div>
+
+      <!-- 8 -->
+      <!-- sunnay -->
+      <div class="sunnay">
+        <div class="sunnay_box">
+          <div class="sunnay_nav">
+            <!-- 头像 -->
+            <div class="Avatar">
+              <img src="@/assets/images/组39.png" alt />
+            </div>
+            <div>
+              <div class="sunnay_title_nav">
+                <div class="sunnay_title">sunnay</div>
+                <el-rate v-model="value1"></el-rate>
+              </div>
+              <div class="Review">Review for: 1 Day · Ticket - B Regular Season (JPY8,400)</div>
+              <div class="no">no hassle to line up at the queue on the venue itself</div>
+              <div class="Read">Read all 74,306 reviews</div>
+            </div>
+            <div class="Nov">28 Nov 2019</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="Package Related">
+        <div class="Options">What To Expect</div>
+      </div>
+
+      <!-- 10 -->
+      <div class="welcome">
+        Welcome to the incredible world of Universal Studios Japan in Osaka! With a Universal Studios Japan
+        ticket from Klook, you can recreate dramatic scenes from your favorite blockbusters – at one of only two
+        locations in Asia! Encounter a new dimension of excitement with attractions from Harry Potter, Minions,
+        Spider Man, Jurassic Park, Jaws, and more! Experience the magic firsthand at the towering Hogwarts
+        castle and Hogsmeade village before riding wizard-themed rides and attractions in The Wizarding World of
+        Harry Potter. This adventure park is sure to indulge the thrill-seeker and movie buff's every fantasy!
+      </div>
+
+      <!-- 11 -->
+      <div class="figure_box">
+        <!-- 游玩图 -->
+        <div class="figure">
+          <img src="@/assets/images/组40.png" alt />
+        </div>
+
+        <!-- 内容 -->
+        <div class="Osaka">▲ Don't miss out on all the featured activities at Universal Studios Japan in Osaka!
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div class="figure_box">
+        <!-- 游玩图 -->
+        <div class="figure">
+          <img src="@/assets/images/组41.png" alt />
+        </div>
+
+        <!-- 内容 -->
+        <div class="Osaka">▲ Don't miss out on all the featured activities at Universal Studios Japan in Osaka!
+        </div>
+      </div>
+
+      <!-- 13 -->
+      <!-- booking -->
+      <div class="booking_box">
+        <div class="Package Options_booking">
+          <div class="Options">Booking Information</div>
+        </div>
+
+        <div class="booking_left">
+          <div class="booking_title">Confirmation:</div>
+          <div class="booking_nav">
+            <div class="dian">●</div>
+            <div>You will receive a confirmation email and voucher instantly after booking</div>
+          </div>
+          <div class="booking_nav">
+            <div class="dian">●</div>
+            <div>
               In the event that you do not receive an email from us, please check your Spam folder or
               notify us via email
             </div>
           </div>
-          <div class="select_textarea">
-            <div>●</div>
-            <div class="textarea_nav">You can present either a printed or a mobile voucher for this
-              activity</div>
-          </div>
         </div>
 
-        <div class="package_right">
-          <!-- Package_nav -->
-          <div class="Package_nav">
-            <div class="Description">How To Use</div>
+        <div class="Additional_color">
+          <div class="booking_title">Additional Information:</div>
+          <div class="booking_nav">
+            <div class="dian">●</div>
+            <div>Child ticket: Age 4-11</div>
           </div>
-          <!-- nav -->
-          <div class="select_textarea">
-            <div>●</div>
-            <div class="textarea_nav">You can present either a printed or a mobile voucher for this
-              activity</div>
+          <div class="booking_nav">
+            <div class="dian">●</div>
+            <div>Re-entry is not allowed once you leave the park</div>
           </div>
-          <div class="select_textarea">
-            <div>●</div>
-            <div class="textarea_nav">You can enter the attraction directly with this voucher</div>
+
+          <div class="booking_title">Insider Tips:</div>
+          <div class="booking_nav">
+            <div class="dian">●</div>
+            <div>
+              At peak times, you are not guaranteed entry at the Wizarding World of Harry Potter when
+              timed entry is in place,
+              unless you purchase the
+              <span>Express Pass 4</span>or any
+              <span>Express Pass 7</span>
+            </div>
+          </div>
+
+          <div class="booking_nav">
+            <div class="dian">●</div>
+            <div>
+              Book a
+              <span>Countdown Party Entry Pass</span> on 31 Dec to celebrate 2020 New Year! Party
+              it up from
+              7:00pm on 31 Dec to 2:00am on 1 Jan, exclusive to Party Pass Ticket holders
+            </div>
+          </div>
+
+          <div class="booking_nav">
+            <div class="dian">●</div>
+            <div>
+              At peak times, you are not guaranteed entry at the Wizarding World of Harry Potter when
+              timed entry is in place, unless you purchase the Central Park
+            </div>
+          </div>
+
+          <div class="booking_nav">
+            <div class="dian">●</div>
+            <div>
+              The
+              <span>15-minute Early</span>Entry gives you entry to USJ 15 minutes before it opens so
+              you can be first in line!
+            </div>
+          </div>
+
+          <div class="booking_nav">
+            <div class="dian">●</div>
+            <div>
+              Grab food at Universal Citywalk Osaka before entering the park to fill your stomach and
+              save
+              money
+            </div>
+          </div>
+
+          <div class="booking_nav">
+            <div class="dian">●</div>
+            <div>
+              Get the most out of your day with insider tips from Klook’s
+              <span>USJ guide</span>
+            </div>
+          </div>
+
+          <div class="booking_nav">
+            <div class="dian">●</div>
+            <div>
+              Check the
+              <span>studio map</span> to plan your visit
+            </div>
+          </div>
+
+          <div class="booking_nav">
+            <div class="dian">●</div>
+            <div>For more details on USJ shows and attractions, check the official website</div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- 5 -->
-    <div class="Package Related">
-      <div class="Options">Related Activities</div>
-    </div>
+      <!-- 14 -->
+      <!-- How To Use -->
+      <div class="how_box">
+        <div class="Package how_use">
+          <div class="Options">How To Use</div>
+        </div>
 
-    <!-- 6 -->
-    <!-- 轮播图 -->
-    <div class="swiper">
-      <el-carousel type="card">
-        <el-carousel-item v-for="item in 6" :key="item">
-          <!-- <h3 class="medium">{{ item }}</h3> -->
-          <div class="swiper_box">
-            <div class="stat_left">
-              <img src="@/assets/images/组47.png" alt="/">
-            </div>
-            <div class="stat_right">
-              <div class="swiper_title">Universal Studios Japan™ 1 Day Pass and Express Pass 4 with
-                JPY5,000 Shopping...</div>
-              <div class="stat_box">
-                <div class="stat">☆</div>
-                <div class="stat_num">4.7</div>
-                <div class="num_num">(16,254 reviews)</div>
+        <div>
+          <div class="present">
+            <div class="dian">●</div>
+            <div>You can present either a printed or a mobile voucher for this activity</div>
+          </div>
+
+          <div class="present">
+            <div class="dian">●</div>
+            <div>You can enter the attraction directly with this voucher</div>
+          </div>
+
+          <div class="present">
+            <div class="dian">●</div>
+            <div>The voucher is valid within 180 days from the date you selected upon booking</div>
+          </div>
+
+          <div class="present">
+            <div class="dian">●</div>
+            <div>You can enter the attraction directly with this voucher</div>
+          </div>
+
+          <div class="present">
+            <div class="dian">●</div>
+            <div>The voucher is transferable regardless of whose name it is booked under</div>
+          </div>
+        </div>
+
+        <div class="Admission">Admission Guidelines:</div>
+
+        <div class="how_nav_box">
+          <div class="how_title">1 Day Ticket</div>
+          <div>
+            <div class="present">
+              <div class="dian">●</div>
+              <div>
+                You may only visit the park on days with the same price tier as your voucher (Ticket A
+                cannot be used for entry on
+                Tickets B, C or D dates, etc.) Check the Price Calendar above for reference
               </div>
-              <div class="num_box">
-                <div class="num_price">¥ 726</div>
-                <div>
-                  <img src="@/assets/images/图层11.png" alt="">
-                </div>
+            </div>
+
+            <div class="present">
+              <div class="dian">●</div>
+              <div>
+                Tickets cannot be exchanged on site. You will need to repurchase if you need a
+                different ticket type
+              </div>
+            </div>
+
+            <div class="present">
+              <div class="dian">●</div>
+              <div>You cannot enter the attraction before the date you selected when booking</div>
+            </div>
+
+            <div class="present">
+              <div class="dian">●</div>
+              <div>
+                The voucher is transferable. Anyone can use it regardless of whose name it is booked
+                under
               </div>
             </div>
           </div>
-        </el-carousel-item>
-      </el-carousel>
-    </div>
+        </div>
 
-    <!-- 7 -->
-    <div class="Package Related">
-      <div class="Options">Most Recent Review</div>
-    </div>
-
-    <!-- 8 -->
-    <!-- sunnay -->
-    <div class="sunnay">
-      <div class="sunnay_box">
-        <div class="sunnay_nav">
-          <!-- 头像 -->
-          <div class="Avatar">
-            <img src="@/assets/images/组39.png" alt />
-          </div>
+        <div class="how_nav_box">
+          <div class="how_title">2-Day Ticket</div>
           <div>
-            <div class="sunnay_title_nav">
-              <div class="sunnay_title">sunnay</div>
-              <el-rate v-model="value1"></el-rate>
+            <div class="present">
+              <div class="dian">●</div>
+              <div>The ticket is valid for 2 consecutive days of use</div>
             </div>
-            <div class="Review">Review for: 1 Day · Ticket - B Regular Season (JPY8,400)</div>
-            <div class="no">no hassle to line up at the queue on the venue itself</div>
-            <div class="Read">Read all 74,306 reviews</div>
+
+            <div class="present">
+              <div class="dian">●</div>
+              <div>
+                Please note:
+                Keep your ticket after the first day, or you will not be able to use it for the second
+                day. It will not be
+                reissued if lost
+              </div>
+            </div>
           </div>
-          <div class="Nov">28 Nov 2019</div>
         </div>
-      </div>
-    </div>
 
-    <!-- 9 -->
-    <div class="Package Related">
-      <div class="Options">What To Expect</div>
-    </div>
-
-    <!-- 10 -->
-    <div class="welcome">
-      Welcome to the incredible world of Universal Studios Japan in Osaka! With a Universal Studios Japan
-      ticket from Klook, you can recreate dramatic scenes from your favorite blockbusters – at one of only two
-      locations in Asia! Encounter a new dimension of excitement with attractions from Harry Potter, Minions,
-      Spider Man, Jurassic Park, Jaws, and more! Experience the magic firsthand at the towering Hogwarts
-      castle and Hogsmeade village before riding wizard-themed rides and attractions in The Wizarding World of
-      Harry Potter. This adventure park is sure to indulge the thrill-seeker and movie buff's every fantasy!
-    </div>
-
-    <!-- 11 -->
-    <div class="figure_box">
-      <!-- 游玩图 -->
-      <div class="figure">
-        <img src="@/assets/images/组40.png" alt />
-      </div>
-
-      <!-- 内容 -->
-      <div class="Osaka">▲ Don't miss out on all the featured activities at Universal Studios Japan in Osaka!
-      </div>
-    </div>
-
-    <!-- 12 -->
-    <div class="figure_box">
-      <!-- 游玩图 -->
-      <div class="figure">
-        <img src="@/assets/images/组41.png" alt />
-      </div>
-
-      <!-- 内容 -->
-      <div class="Osaka">▲ Don't miss out on all the featured activities at Universal Studios Japan in Osaka!
-      </div>
-    </div>
-
-    <!-- 13 -->
-    <!-- booking -->
-    <div class="booking_box">
-      <div class="Package Options_booking">
-        <div class="Options">Booking Information</div>
-      </div>
-
-      <div class="booking_left">
-        <div class="booking_title">Confirmation:</div>
-        <div class="booking_nav">
-          <div class="dian">●</div>
-          <div>You will receive a confirmation email and voucher instantly after booking</div>
-        </div>
-        <div class="booking_nav">
-          <div class="dian">●</div>
+        <div class="how_nav_box">
+          <div class="how_title">Opening Hours:</div>
           <div>
-            In the event that you do not receive an email from us, please check your Spam folder or
-            notify us via email
+            <div class="present">
+              <div class="dian">●</div>
+              <div>9:30am–7:00pm</div>
+            </div>
+
+            <div class="present">
+              <div class="dian">●</div>
+              <div>Please note that park opening hours vary</div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="Additional_color">
-        <div class="booking_title">Additional Information:</div>
-        <div class="booking_nav">
-          <div class="dian">●</div>
-          <div>Child ticket: Age 4-11</div>
-        </div>
-        <div class="booking_nav">
-          <div class="dian">●</div>
-          <div>Re-entry is not allowed once you leave the park</div>
-        </div>
-
-        <div class="booking_title">Insider Tips:</div>
-        <div class="booking_nav">
-          <div class="dian">●</div>
+        <div class="how_nav_box">
+          <div class="how_title">How To Get There:</div>
           <div>
-            At peak times, you are not guaranteed entry at the Wizarding World of Harry Potter when
-            timed entry is in place,
-            unless you purchase the
-            <span>Express Pass 4</span>or any
-            <span>Express Pass 7</span>
+            <div class="present">
+              <div class="dian">●</div>
+              <div>
+                From hotel:
+                Check with your hotel for shuttle services to USJ
+              </div>
+            </div>
+
+            <div class="present">
+              <div class="dian">●</div>
+              <div>
+                By bus:
+                35-75 minutes from Kansai Airport and 45 minutes from Itami Airport
+              </div>
+            </div>
+
+            <div class="present">
+              <div class="dian">●</div>
+              <div>
+                By train:
+                From Namba, take Hanshin Namba Line to Nishikujo (4th stop) then transfer to JR Yumesaki
+                Line and get off
+                at Universal City Station
+              </div>
+            </div>
+
+            <div class="present">
+              <div class="dian">●</div>
+              <div>
+                By ferry:
+                Captain Line transfers people to and from Universal Studios Japan and Osaka Aquarium
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="booking_nav">
-          <div class="dian">●</div>
-          <div>
-            Book a
-            <span>Countdown Party Entry Pass</span> on 31 Dec to celebrate 2020 New Year! Party
-            it up from
-            7:00pm on 31 Dec to 2:00am on 1 Jan, exclusive to Party Pass Ticket holders
-          </div>
+        <!-- 地图 -->
+        <div class="how_map">
+          <img src="@/assets/images/图层14.png" alt />
         </div>
 
-        <div class="booking_nav">
-          <div class="dian">●</div>
-          <div>
-            At peak times, you are not guaranteed entry at the Wizarding World of Harry Potter when
-            timed entry is in place, unless you purchase the Central Park
-          </div>
-        </div>
-
-        <div class="booking_nav">
-          <div class="dian">●</div>
-          <div>
-            The
-            <span>15-minute Early</span>Entry gives you entry to USJ 15 minutes before it opens so
-            you can be first in line!
-          </div>
-        </div>
-
-        <div class="booking_nav">
-          <div class="dian">●</div>
-          <div>
-            Grab food at Universal Citywalk Osaka before entering the park to fill your stomach and
-            save
-            money
-          </div>
-        </div>
-
-        <div class="booking_nav">
-          <div class="dian">●</div>
-          <div>
-            Get the most out of your day with insider tips from Klook’s
-            <span>USJ guide</span>
-          </div>
-        </div>
-
-        <div class="booking_nav">
-          <div class="dian">●</div>
-          <div>
-            Check the
-            <span>studio map</span> to plan your visit
-          </div>
-        </div>
-
-        <div class="booking_nav">
-          <div class="dian">●</div>
-          <div>For more details on USJ shows and attractions, check the official website</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 14 -->
-    <!-- How To Use -->
-    <div class="how_box">
-      <div class="Package how_use">
-        <div class="Options">How To Use</div>
       </div>
 
-      <div>
-        <div class="present">
-          <div class="dian">●</div>
-          <div>You can present either a printed or a mobile voucher for this activity</div>
-        </div>
+      <!-- 15 -->
+      <!-- Common problem -->
+      <div class="common_big_box">
+        <div class="Common_box">
+          <div class="Package">
+            <div class="Options">Common problem</div>
+          </div>
 
-        <div class="present">
-          <div class="dian">●</div>
-          <div>You can enter the attraction directly with this voucher</div>
-        </div>
+          <div class="Activity">Activity Q&A</div>
 
-        <div class="present">
-          <div class="dian">●</div>
-          <div>The voucher is valid within 180 days from the date you selected upon booking</div>
-        </div>
-
-        <div class="present">
-          <div class="dian">●</div>
-          <div>You can enter the attraction directly with this voucher</div>
-        </div>
-
-        <div class="present">
-          <div class="dian">●</div>
-          <div>The voucher is transferable regardless of whose name it is booked under</div>
-        </div>
-      </div>
-
-      <div class="Admission">Admission Guidelines:</div>
-
-      <div class="how_nav_box">
-        <div class="how_title">1 Day Ticket</div>
-        <div>
-          <div class="present">
-            <div class="dian">●</div>
-            <div>
-              You may only visit the park on days with the same price tier as your voucher (Ticket A
-              cannot be used for entry on
-              Tickets B, C or D dates, etc.) Check the Price Calendar above for reference
+          <div class="common_problem">
+            <div class="common_nav">
+              <div class="common_title">Q 1:</div>
+              <div class="common_text">
+                Do I have to enter the park on the date I selected when make the
+                booking?
+              </div>
+            </div>
+            <div class="common_nav">
+              <div class="common_title">A 1:</div>
+              <div class="common_text">
+                The passes are considered open tickets, you may enter the park on any day before the
+                expiration date
+                written on the pass
+              </div>
             </div>
           </div>
 
-          <div class="present">
-            <div class="dian">●</div>
-            <div>
-              Tickets cannot be exchanged on site. You will need to repurchase if you need a
-              different ticket type
+          <div class="common_problem">
+            <div class="common_nav">
+              <div class="common_title">Q 2:</div>
+              <div class="common_text">Can I make any changes to my booking?</div>
+            </div>
+            <div class="common_nav">
+              <div class="common_title">A 2:</div>
+              <div class="common_text">
+                Unfortunately, all confirmations are final. You cannot cancel, refund, or make changes
+                to your booking
+                Please carefully plan your trip and provide the correct information during the purchase.
+              </div>
             </div>
           </div>
 
-          <div class="present">
-            <div class="dian">●</div>
-            <div>You cannot enter the attraction before the date you selected when booking</div>
-          </div>
-
-          <div class="present">
-            <div class="dian">●</div>
-            <div>
-              The voucher is transferable. Anyone can use it regardless of whose name it is booked
-              under
+          <div class="common_problem">
+            <div class="common_nav">
+              <div class="common_title">Q 3:</div>
+              <div class="common_text">What does open date ticket mean?</div>
+            </div>
+            <div class="common_nav">
+              <div class="common_title">A 3:</div>
+              <div class="common_text">
+                Open date ticket means you can use this pass on any day within the period of
+                validity.The date you
+                specified for booking is for reference only, so you may redeem the pass within 6 months
+                from your
+                specified date.
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="how_nav_box">
-        <div class="how_title">2-Day Ticket</div>
-        <div>
-          <div class="present">
-            <div class="dian">●</div>
-            <div>The ticket is valid for 2 consecutive days of use</div>
+          <div class="common_problem">
+            <div class="common_nav">
+              <div class="common_title">Q 4:</div>
+              <div class="common_text">How do I know if my booking has been confirmed?</div>
+            </div>
+            <div class="common_nav">
+              <div class="common_title">A 4:</div>
+              <div class="common_text">
+                Your booking is confirmed once you have received the confirmation email with the voucher
+                attached
+                within 5 minutes after booking. You can also find your voucher within your booking
+                details - On Web
+                access "My Bookings" within your profile, look for this order and you should see the
+                "View Voucher"
+                button. On App: access "My Bookings" via the Bookings tab, look for this order and you
+                should see the
+                View Voucher" button.
+              </div>
+            </div>
           </div>
 
-          <div class="present">
-            <div class="dian">●</div>
-            <div>
-              Please note:
-              Keep your ticket after the first day, or you will not be able to use it for the second
-              day. It will not be
-              reissued if lost
+          <div class="common_problem">
+            <div class="common_nav">
+              <div class="common_title">Q 5:</div>
+              <div class="common_text">Do children need a ticket to enter? What are the age limits for a
+                child ticket?</div>
+            </div>
+            <div class="common_nav">
+              <div class="common_title">A 5:</div>
+              <div class="common_text">
+                Yes, children from ages 4-11 require a child ticket to enter the park. Infants under the
+                age 4 can enter
+                the park for free.
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="how_nav_box">
-        <div class="how_title">Opening Hours:</div>
-        <div>
-          <div class="present">
-            <div class="dian">●</div>
-            <div>9:30am–7:00pm</div>
-          </div>
-
-          <div class="present">
-            <div class="dian">●</div>
-            <div>Please note that park opening hours vary</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="how_nav_box">
-        <div class="how_title">How To Get There:</div>
-        <div>
-          <div class="present">
-            <div class="dian">●</div>
-            <div>
-              From hotel:
-              Check with your hotel for shuttle services to USJ
-            </div>
-          </div>
-
-          <div class="present">
-            <div class="dian">●</div>
-            <div>
-              By bus:
-              35-75 minutes from Kansai Airport and 45 minutes from Itami Airport
-            </div>
-          </div>
-
-          <div class="present">
-            <div class="dian">●</div>
-            <div>
-              By train:
-              From Namba, take Hanshin Namba Line to Nishikujo (4th stop) then transfer to JR Yumesaki
-              Line and get off
-              at Universal City Station
-            </div>
-          </div>
-
-          <div class="present">
-            <div class="dian">●</div>
-            <div>
-              By ferry:
-              Captain Line transfers people to and from Universal Studios Japan and Osaka Aquarium
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- 地图 -->
-      <div class="how_map">
-        <img src="@/assets/images/图层14.png" alt />
-      </div>
-
-    </div>
-
-    <!-- 15 -->
-    <!-- Common problem -->
-    <div class="common_big_box">
-      <div class="Common_box">
-        <div class="Package">
-          <div class="Options">Common problem</div>
-        </div>
-
-        <div class="Activity">Activity Q&A</div>
-
-        <div class="common_problem">
-          <div class="common_nav">
-            <div class="common_title">Q 1:</div>
-            <div class="common_text">
-              Do I have to enter the park on the date I selected when make the
-              booking?
-            </div>
-          </div>
-          <div class="common_nav">
-            <div class="common_title">A 1:</div>
-            <div class="common_text">
-              The passes are considered open tickets, you may enter the park on any day before the
-              expiration date
-              written on the pass
-            </div>
-          </div>
-        </div>
-
-        <div class="common_problem">
-          <div class="common_nav">
-            <div class="common_title">Q 2:</div>
-            <div class="common_text">Can I make any changes to my booking?</div>
-          </div>
-          <div class="common_nav">
-            <div class="common_title">A 2:</div>
-            <div class="common_text">
-              Unfortunately, all confirmations are final. You cannot cancel, refund, or make changes
-              to your booking
-              Please carefully plan your trip and provide the correct information during the purchase.
-            </div>
-          </div>
-        </div>
-
-        <div class="common_problem">
-          <div class="common_nav">
-            <div class="common_title">Q 3:</div>
-            <div class="common_text">What does open date ticket mean?</div>
-          </div>
-          <div class="common_nav">
-            <div class="common_title">A 3:</div>
-            <div class="common_text">
-              Open date ticket means you can use this pass on any day within the period of
-              validity.The date you
-              specified for booking is for reference only, so you may redeem the pass within 6 months
-              from your
-              specified date.
-            </div>
-          </div>
-        </div>
-
-        <div class="common_problem">
-          <div class="common_nav">
-            <div class="common_title">Q 4:</div>
-            <div class="common_text">How do I know if my booking has been confirmed?</div>
-          </div>
-          <div class="common_nav">
-            <div class="common_title">A 4:</div>
-            <div class="common_text">
-              Your booking is confirmed once you have received the confirmation email with the voucher
-              attached
-              within 5 minutes after booking. You can also find your voucher within your booking
-              details - On Web
-              access "My Bookings" within your profile, look for this order and you should see the
-              "View Voucher"
-              button. On App: access "My Bookings" via the Bookings tab, look for this order and you
-              should see the
-              View Voucher" button.
-            </div>
-          </div>
-        </div>
-
-        <div class="common_problem">
-          <div class="common_nav">
-            <div class="common_title">Q 5:</div>
-            <div class="common_text">Do children need a ticket to enter? What are the age limits for a
-              child ticket?</div>
-          </div>
-          <div class="common_nav">
-            <div class="common_title">A 5:</div>
-            <div class="common_text">
-              Yes, children from ages 4-11 require a child ticket to enter the park. Infants under the
-              age 4 can enter
-              the park for free.
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
   </div>
-
-</div>
 </template>
 
 <script>
@@ -733,7 +733,8 @@ export default {
   name: "home",
   data() {
     return {
-      options: [{
+      options: [
+        {
           value: "选项1",
           label: "黄金糕，葫芦娃救爷爷",
         },
@@ -833,6 +834,7 @@ export default {
 .mains {
   background-color: #eee;
   padding-top: 30px;
+  padding-bottom: 1px;
 }
 
 .main_nav {

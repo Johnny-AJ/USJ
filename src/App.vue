@@ -25,7 +25,8 @@ export default {
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
-  background-color: #eee;
+  // background-color: #eee;
+  background-color: #0073e3;
 }
 
 .pagerwrap {
